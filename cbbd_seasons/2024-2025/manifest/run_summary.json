@@ -1,0 +1,30 @@
+{
+  "year": 2025,
+  "season_label": "2024-2025",
+  "requested_teams": 364,
+  "matched_teams": 362,
+  "unmatched_teams": 2,
+  "season_types": [
+    "regular",
+    "postseason"
+  ],
+  "datasets": "lineups",
+  "include_player_shooting": false,
+  "cache_mode": "readwrite",
+  "cache_dir": "/tmp/cbbd_http_cache",
+  "started_utc": "2026-02-21T22:10:32.001792+00:00",
+  "dataset_rows": {
+    "lineups_regular": {
+      "rows": 62042
+    },
+    "lineups_postseason": {
+      "rows": 35125
+    },
+    "lineups_fullseason": {
+      "rows": 97167
+    }
+  },
+  "request_count": 1449,
+  "cache_hits": 0,
+  "finished_utc": "2026-02-21T23:48:40.801412+00:00"
+}
