@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import csv
 import difflib
+import hashlib
 import json
 import os
 import re
@@ -223,18 +224,60 @@ class Client:
         sleep_sec: float = 0.15,
         timeout_sec: int = 60,
         max_requests: int = 5000,
+        cache_dir: Path | None = None,
+        cache_mode: str = "readwrite",
     ) -> None:
         self.api_key = api_key
         self.sleep_sec = sleep_sec
         self.timeout_sec = timeout_sec
         self.max_requests = max_requests
+        self.cache_dir = cache_dir
+        self.cache_mode = cache_mode
         self.request_count = 0
+        self.cache_hits = 0
         self.request_log: list[dict[str, Any]] = []
+        if self.cache_dir is not None:
+            ensure_dir(self.cache_dir)
+
+    @staticmethod
+    def _normalized_params(params: dict[str, Any]) -> dict[str, Any]:
+        return {k: params[k] for k in sorted(params.keys()) if params[k] is not None and params[k] != ""}
+
+    def _cache_path(self, path: str, params: dict[str, Any]) -> Path | None:
+        if self.cache_dir is None:
+            return None
+        key_payload = {"path": path, "params": self._normalized_params(params)}
+        key = hashlib.sha1(json.dumps(key_payload, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
+        return self.cache_dir / f"{key}.json"
 
     def get(self, path: str, params: dict[str, Any]) -> tuple[int, Any]:
+        cache_path = self._cache_path(path, params)
+        if self.cache_mode in {"readwrite", "readonly"} and cache_path is not None and cache_path.exists():
+            try:
+                cached = json.loads(cache_path.read_text(encoding="utf-8"))
+                status = int(cached.get("status", 0))
+                body = cached.get("body")
+                self.cache_hits += 1
+                self.request_log.append(
+                    {
+                        "ts_utc": utc_now(),
+                        "path": path,
+                        "params": json.dumps(self._normalized_params(params), ensure_ascii=True),
+                        "status": status,
+                        "error": "",
+                        "duration_sec": 0.0,
+                        "from_cache": True,
+                    }
+                )
+                return status, body
+            except Exception:
+                # Ignore bad cache files and continue to live request.
+                pass
+
         if self.request_count >= self.max_requests:
             raise RuntimeError(f"Request budget exceeded (max_requests={self.max_requests}).")
-        query = urlencode({k: v for k, v in params.items() if v is not None and v != ""})
+        norm_params = self._normalized_params(params)
+        query = urlencode(norm_params)
         url = f"{BASE_URL}{path}" + (f"?{query}" if query else "")
         req = Request(
             url,
@@ -274,12 +317,30 @@ class Client:
                 {
                     "ts_utc": utc_now(),
                     "path": path,
-                    "params": json.dumps(params, ensure_ascii=True),
+                    "params": json.dumps(norm_params, ensure_ascii=True),
                     "status": status,
                     "error": error,
                     "duration_sec": round(time.time() - t0, 3),
+                    "from_cache": False,
                 }
             )
+            if cache_path is not None and self.cache_mode in {"readwrite", "refresh"}:
+                try:
+                    cache_path.write_text(
+                        json.dumps(
+                            {
+                                "status": status,
+                                "body": body,
+                                "cached_utc": utc_now(),
+                                "path": path,
+                                "params": norm_params,
+                            },
+                            ensure_ascii=True,
+                        ),
+                        encoding="utf-8",
+                    )
+                except Exception:
+                    pass
             time.sleep(self.sleep_sec)
         return status, body
 
@@ -507,8 +568,30 @@ def main() -> None:
     )
     parser.add_argument("--team-col", default="team", help="Team column in the CSV.")
     parser.add_argument("--season-type", default="both", choices=["regular", "postseason", "both"])
+    parser.add_argument(
+        "--datasets",
+        default="both",
+        choices=["lineups", "plays", "both"],
+        help="Choose what to pull: lineups only, plays only, or both.",
+    )
+    parser.add_argument(
+        "--include-player-shooting",
+        action="store_true",
+        help="Also pull player shooting tables (off by default).",
+    )
     parser.add_argument("--sleep-sec", type=float, default=0.15)
     parser.add_argument("--max-requests", type=int, default=3000)
+    parser.add_argument(
+        "--cache-mode",
+        default="readwrite",
+        choices=["none", "readwrite", "readonly", "refresh"],
+        help="HTTP cache mode for API responses.",
+    )
+    parser.add_argument(
+        "--cache-dir",
+        default="",
+        help="Optional cache directory. Defaults to <out>/<season>/.http_cache",
+    )
     parser.add_argument(
         "--out-root",
         default="cbbd_seasons",
@@ -525,6 +608,9 @@ def main() -> None:
     ensure_dir(out / "raw")
     ensure_dir(out / "tables")
     ensure_dir(out / "manifest")
+    cache_dir = Path(args.cache_dir) if args.cache_dir else out / ".http_cache"
+    use_lineups = args.datasets in {"lineups", "both"}
+    use_plays = args.datasets in {"plays", "both"}
 
     teams_csv_path = Path(args.teams_csv)
     if not teams_csv_path.exists():
@@ -533,7 +619,13 @@ def main() -> None:
             "Use --teams-csv with a repository-relative path."
         )
 
-    client = Client(api_key=api_key, sleep_sec=args.sleep_sec, max_requests=args.max_requests)
+    client = Client(
+        api_key=api_key,
+        sleep_sec=args.sleep_sec,
+        max_requests=args.max_requests,
+        cache_dir=cache_dir if args.cache_mode != "none" else None,
+        cache_mode=args.cache_mode,
+    )
     requested = read_requested_teams(teams_csv_path, args.team_col)
     log(f"[teams] requested={len(requested)}")
 
@@ -553,92 +645,113 @@ def main() -> None:
         "matched_teams": len(matched),
         "unmatched_teams": len(unmatched),
         "season_types": season_types,
+        "datasets": args.datasets,
+        "include_player_shooting": bool(args.include_player_shooting),
+        "cache_mode": args.cache_mode,
+        "cache_dir": str(cache_dir) if args.cache_mode != "none" else "",
         "started_utc": utc_now(),
-        "datasets": {},
+        "dataset_rows": {},
     }
 
     for st in season_types:
         lineups = []
         plays = []
         plays_unknown = []
-        # Player shooting: global pull then local filter (team-scoped calls return [] for many teams).
-        ps_params = {"season": args.year, "seasonType": st}
-        ps_status, ps_payload = client.get("/stats/player/shooting/season", ps_params)
-        save_raw(out, f"player_shooting_{st}", f"global_{ps_status}", ps_payload)
-        ps_all = to_records(ps_payload) if ps_status == 200 else []
-        player_shooting = filter_player_shooting_to_matched(ps_all, matched, st)
-        log(
-            f"[player_shooting_{st}] global_rows={len(ps_all)} "
-            f"filtered_rows={len(player_shooting)} requests={client.request_count}"
-        )
+        player_shooting: list[dict[str, Any]] = []
+        if args.include_player_shooting:
+            # Player shooting: global pull then local filter (team-scoped calls return [] for many teams).
+            ps_params = {"season": args.year, "seasonType": st}
+            ps_status, ps_payload = client.get("/stats/player/shooting/season", ps_params)
+            save_raw(out, f"player_shooting_{st}", f"global_{ps_status}", ps_payload)
+            ps_all = to_records(ps_payload) if ps_status == 200 else []
+            player_shooting = filter_player_shooting_to_matched(ps_all, matched, st)
+            log(
+                f"[player_shooting_{st}] global_rows={len(ps_all)} "
+                f"filtered_rows={len(player_shooting)} requests={client.request_count} cache_hits={client.cache_hits}"
+            )
         n = len(matched)
         for i, team in enumerate(matched, start=1):
             team_name = str(team.get("team_name") or "")
             team_id = team.get("team_id")
 
-            games_reg = get_games_for_team(client, out, team_name, args.year, "regular")
-            reg_ids = {int(g["id"]) for g in games_reg if g.get("id") is not None}
-            reg_start, reg_end = date_range_from_games(games_reg)
+            need_reg_games = (use_lineups and st == "regular") or (use_plays and st == "regular")
+            need_post_games = (use_lineups and st == "postseason") or (use_plays and st == "postseason")
 
-            games_post = []
+            reg_ids: set[int] = set()
+            reg_start = None
+            reg_end = None
+            if need_reg_games:
+                games_reg = get_games_for_team(client, out, team_name, args.year, "regular")
+                reg_ids = {int(g["id"]) for g in games_reg if g.get("id") is not None}
+                reg_start, reg_end = date_range_from_games(games_reg)
+
             post_ids: set[int] = set()
             post_start = None
             post_end = None
-            if st == "postseason" or args.season_type == "both":
+            if need_post_games:
                 games_post = get_games_for_team(client, out, team_name, args.year, "postseason")
                 post_ids = {int(g["id"]) for g in games_post if g.get("id") is not None}
                 post_start, post_end = date_range_from_games(games_post)
 
             if st == "regular":
-                l_reg = get_lineups_for_team_range(client, out, team_name, args.year, "regular", reg_start, reg_end)
-                for r in l_reg:
-                    r["__team_id"] = team_id
-                    r["__team_name"] = team_name
-                lineups.extend(l_reg)
+                if use_lineups:
+                    l_reg = get_lineups_for_team_range(client, out, team_name, args.year, "regular", reg_start, reg_end)
+                    for r in l_reg:
+                        r["__team_id"] = team_id
+                        r["__team_name"] = team_name
+                    lineups.extend(l_reg)
 
-                p_full = get_plays_for_team_fullseason(client, out, team_name, args.year)
-                p_reg, _, p_unknown = split_plays_by_game_ids(p_full, reg_ids, set())
-                for r in p_reg:
-                    r["__team_id"] = team_id
-                    r["__team_name"] = team_name
-                for r in p_unknown:
-                    r["__team_id"] = team_id
-                    r["__team_name"] = team_name
-                plays.extend(p_reg)
-                plays_unknown.extend(p_unknown)
+                if use_plays:
+                    p_full = get_plays_for_team_fullseason(client, out, team_name, args.year)
+                    p_reg, _, p_unknown = split_plays_by_game_ids(p_full, reg_ids, set())
+                    for r in p_reg:
+                        r["__team_id"] = team_id
+                        r["__team_name"] = team_name
+                    for r in p_unknown:
+                        r["__team_id"] = team_id
+                        r["__team_name"] = team_name
+                    plays.extend(p_reg)
+                    plays_unknown.extend(p_unknown)
 
             elif st == "postseason":
-                l_post = get_lineups_for_team_range(client, out, team_name, args.year, "postseason", post_start, post_end)
-                for r in l_post:
-                    r["__team_id"] = team_id
-                    r["__team_name"] = team_name
-                lineups.extend(l_post)
+                if use_lineups:
+                    l_post = get_lineups_for_team_range(
+                        client, out, team_name, args.year, "postseason", post_start, post_end
+                    )
+                    for r in l_post:
+                        r["__team_id"] = team_id
+                        r["__team_name"] = team_name
+                    lineups.extend(l_post)
 
-                p_full = get_plays_for_team_fullseason(client, out, team_name, args.year)
-                _, p_post, p_unknown = split_plays_by_game_ids(p_full, set(), post_ids)
-                for r in p_post:
-                    r["__team_id"] = team_id
-                    r["__team_name"] = team_name
-                for r in p_unknown:
-                    r["__team_id"] = team_id
-                    r["__team_name"] = team_name
-                plays.extend(p_post)
-                plays_unknown.extend(p_unknown)
+                if use_plays:
+                    p_full = get_plays_for_team_fullseason(client, out, team_name, args.year)
+                    _, p_post, p_unknown = split_plays_by_game_ids(p_full, set(), post_ids)
+                    for r in p_post:
+                        r["__team_id"] = team_id
+                        r["__team_name"] = team_name
+                    for r in p_unknown:
+                        r["__team_id"] = team_id
+                        r["__team_name"] = team_name
+                    plays.extend(p_post)
+                    plays_unknown.extend(p_unknown)
 
             if i == 1 or i % 25 == 0 or i == n:
                 log(
                     f"[lineups_plays_{st}] team {i}/{n} requests={client.request_count} "
-                    f"lineups_rows={len(lineups)} plays_rows={len(plays)}"
+                    f"cache_hits={client.cache_hits} lineups_rows={len(lineups)} plays_rows={len(plays)}"
                 )
 
-        write_csv([flatten_obj(r) for r in lineups], out / "tables" / f"lineups_{st}.csv")
-        write_csv([flatten_obj(r) for r in plays], out / "tables" / f"plays_{st}.csv")
-        write_csv([flatten_obj(r) for r in plays_unknown], out / "tables" / f"plays_{st}_unknown_game_map.csv")
-        write_csv([flatten_obj(r) for r in player_shooting], out / "tables" / f"player_shooting_{st}.csv")
-        summary["datasets"][f"lineups_{st}"] = {"rows": len(lineups)}
-        summary["datasets"][f"plays_{st}"] = {"rows": len(plays)}
-        summary["datasets"][f"plays_{st}_unknown_game_map"] = {"rows": len(plays_unknown)}
-        summary["datasets"][f"player_shooting_{st}"] = {"rows": len(player_shooting)}
+        if use_lineups:
+            write_csv([flatten_obj(r) for r in lineups], out / "tables" / f"lineups_{st}.csv")
+            summary["dataset_rows"][f"lineups_{st}"] = {"rows": len(lineups)}
+        if use_plays:
+            write_csv([flatten_obj(r) for r in plays], out / "tables" / f"plays_{st}.csv")
+            write_csv([flatten_obj(r) for r in plays_unknown], out / "tables" / f"plays_{st}_unknown_game_map.csv")
+            summary["dataset_rows"][f"plays_{st}"] = {"rows": len(plays)}
+            summary["dataset_rows"][f"plays_{st}_unknown_game_map"] = {"rows": len(plays_unknown)}
+        if args.include_player_shooting:
+            write_csv([flatten_obj(r) for r in player_shooting], out / "tables" / f"player_shooting_{st}.csv")
+            summary["dataset_rows"][f"player_shooting_{st}"] = {"rows": len(player_shooting)}
 
     # If both season types were requested, also write full-season combined tables.
     if args.season_type == "both":
@@ -646,27 +759,34 @@ def main() -> None:
         full_plays: list[dict[str, Any]] = []
         full_player_shooting: list[dict[str, Any]] = []
         for st in ("regular", "postseason"):
-            p_lineups = out / "tables" / f"lineups_{st}.csv"
-            p_plays = out / "tables" / f"plays_{st}.csv"
-            p_player_shooting = out / "tables" / f"player_shooting_{st}.csv"
-            if p_lineups.exists() and p_lineups.stat().st_size > 0:
-                full_lineups.extend(pd.read_csv(p_lineups, low_memory=False).to_dict(orient="records"))
-            if p_plays.exists() and p_plays.stat().st_size > 0:
-                full_plays.extend(pd.read_csv(p_plays, low_memory=False).to_dict(orient="records"))
-            if p_player_shooting.exists() and p_player_shooting.stat().st_size > 0:
-                full_player_shooting.extend(pd.read_csv(p_player_shooting, low_memory=False).to_dict(orient="records"))
-        write_csv(full_lineups, out / "tables" / "lineups_fullseason.csv")
-        write_csv(full_plays, out / "tables" / "plays_fullseason.csv")
-        write_csv(full_player_shooting, out / "tables" / "player_shooting_fullseason_raw.csv")
-        player_shooting_agg = aggregate_player_shooting_fullseason(full_player_shooting)
-        write_csv(player_shooting_agg, out / "tables" / "player_shooting_fullseason.csv")
-        summary["datasets"]["lineups_fullseason"] = {"rows": len(full_lineups)}
-        summary["datasets"]["plays_fullseason"] = {"rows": len(full_plays)}
-        summary["datasets"]["player_shooting_fullseason_raw"] = {"rows": len(full_player_shooting)}
-        summary["datasets"]["player_shooting_fullseason"] = {"rows": len(player_shooting_agg)}
+            if use_lineups:
+                p_lineups = out / "tables" / f"lineups_{st}.csv"
+                if p_lineups.exists() and p_lineups.stat().st_size > 0:
+                    full_lineups.extend(pd.read_csv(p_lineups, low_memory=False).to_dict(orient="records"))
+            if use_plays:
+                p_plays = out / "tables" / f"plays_{st}.csv"
+                if p_plays.exists() and p_plays.stat().st_size > 0:
+                    full_plays.extend(pd.read_csv(p_plays, low_memory=False).to_dict(orient="records"))
+            if args.include_player_shooting:
+                p_player_shooting = out / "tables" / f"player_shooting_{st}.csv"
+                if p_player_shooting.exists() and p_player_shooting.stat().st_size > 0:
+                    full_player_shooting.extend(pd.read_csv(p_player_shooting, low_memory=False).to_dict(orient="records"))
+        if use_lineups:
+            write_csv(full_lineups, out / "tables" / "lineups_fullseason.csv")
+            summary["dataset_rows"]["lineups_fullseason"] = {"rows": len(full_lineups)}
+        if use_plays:
+            write_csv(full_plays, out / "tables" / "plays_fullseason.csv")
+            summary["dataset_rows"]["plays_fullseason"] = {"rows": len(full_plays)}
+        if args.include_player_shooting:
+            write_csv(full_player_shooting, out / "tables" / "player_shooting_fullseason_raw.csv")
+            player_shooting_agg = aggregate_player_shooting_fullseason(full_player_shooting)
+            write_csv(player_shooting_agg, out / "tables" / "player_shooting_fullseason.csv")
+            summary["dataset_rows"]["player_shooting_fullseason_raw"] = {"rows": len(full_player_shooting)}
+            summary["dataset_rows"]["player_shooting_fullseason"] = {"rows": len(player_shooting_agg)}
 
     write_csv(client.request_log, out / "manifest" / "requests_log.csv")
     summary["request_count"] = client.request_count
+    summary["cache_hits"] = client.cache_hits
     summary["finished_utc"] = utc_now()
     with (out / "manifest" / "run_summary.json").open("w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=True, indent=2)
