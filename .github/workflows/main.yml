@@ -11,6 +11,18 @@ on:
         description: "regular, postseason, or both"
         required: true
         default: "both"
+      datasets:
+        description: "lineups, plays, or both"
+        required: true
+        default: "both"
+      include_player_shooting:
+        description: "also pull player shooting (true/false)"
+        required: true
+        default: "false"
+      cache_mode:
+        description: "none, readwrite, readonly, refresh"
+        required: true
+        default: "readwrite"
       teams_csv:
         description: "Path to teams CSV in repo"
         required: true
@@ -44,16 +56,34 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Restore API cache
+        if: ${{ inputs.cache_mode != 'none' }}
+        uses: actions/cache@v4
+        with:
+          path: /tmp/cbbd_http_cache
+          key: ${{ runner.os }}-cbbd-http-${{ inputs.year }}-${{ inputs.season_type }}-${{ inputs.datasets }}-v1
+          restore-keys: |
+            ${{ runner.os }}-cbbd-http-${{ inputs.year }}-${{ inputs.season_type }}-
+            ${{ runner.os }}-cbbd-http-${{ inputs.year }}-
+
       - name: Pull data
         env:
           CBBD_API_KEY: ${{ secrets.CBBD_API_KEY }}
         run: |
+          SHOOTING_FLAG=""
+          if [ "${{ inputs.include_player_shooting }}" = "true" ]; then
+            SHOOTING_FLAG="--include-player-shooting"
+          fi
           python pull_cbbd_lineups_plays_only.py \
             --year "${{ inputs.year }}" \
             --season-type "${{ inputs.season_type }}" \
+            --datasets "${{ inputs.datasets }}" \
             --teams-csv "${{ inputs.teams_csv }}" \
             --out-root "${{ inputs.out_root }}" \
-            --max-requests "${{ inputs.max_requests }}"
+            --max-requests "${{ inputs.max_requests }}" \
+            --cache-mode "${{ inputs.cache_mode }}" \
+            --cache-dir "/tmp/cbbd_http_cache" \
+            $SHOOTING_FLAG
 
       - name: Commit outputs
         run: |
