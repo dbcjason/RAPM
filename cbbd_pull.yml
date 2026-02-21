@@ -1,0 +1,68 @@
+name: Pull CBBD Data
+
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "Season year (2025 => 2024-2025)"
+        required: true
+        default: "2025"
+      season_type:
+        description: "regular, postseason, or both"
+        required: true
+        default: "both"
+      teams_csv:
+        description: "Path to teams CSV in repo"
+        required: true
+        default: "2025_team_results (1).csv"
+      out_root:
+        description: "Output folder in repo"
+        required: true
+        default: "cbbd_seasons"
+      max_requests:
+        description: "Safety cap for API requests"
+        required: true
+        default: "3000"
+
+permissions:
+  contents: write
+
+jobs:
+  pull-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Pull data
+        env:
+          CBBD_API_KEY: ${{ secrets.CBBD_API_KEY }}
+        run: |
+          python pull_cbbd_lineups_plays_only.py \
+            --year "${{ inputs.year }}" \
+            --season-type "${{ inputs.season_type }}" \
+            --teams-csv "${{ inputs.teams_csv }}" \
+            --out-root "${{ inputs.out_root }}" \
+            --max-requests "${{ inputs.max_requests }}"
+
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${{ inputs.out_root }}"
+          if git diff --staged --quiet; then
+            echo "No output changes to commit."
+          else
+            git commit -m "Update CBBD outputs for ${{ inputs.year }} (${{ inputs.season_type }})"
+            git push
+          fi
