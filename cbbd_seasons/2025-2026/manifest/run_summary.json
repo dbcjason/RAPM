@@ -1,0 +1,27 @@
+{
+  "year": 2026,
+  "season_label": "2025-2026",
+  "requested_teams": 364,
+  "matched_teams": 362,
+  "unmatched_teams": 2,
+  "matched_teams_total": 362,
+  "team_start": 1,
+  "team_end": 362,
+  "chunk_tag": "",
+  "season_types": [
+    "regular"
+  ],
+  "datasets": "lineups",
+  "include_player_shooting": false,
+  "cache_mode": "readwrite",
+  "cache_dir": "/tmp/cbbd_http_cache",
+  "started_utc": "2026-02-22T02:50:52.177836+00:00",
+  "dataset_rows": {
+    "lineups_regular": {
+      "rows": 114129
+    }
+  },
+  "request_count": 725,
+  "cache_hits": 0,
+  "finished_utc": "2026-02-22T03:13:24.908844+00:00"
+}

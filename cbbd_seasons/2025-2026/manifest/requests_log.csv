@@ -1,0 +1,726 @@
+duration_sec,error,from_cache,params,path,status,ts_utc
+0.213,,False,"{""season"": 2026}",/teams,200,2026-02-22T02:50:52.021445+00:00
+0.289,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Abilene Christian""}",/games,200,2026-02-22T02:50:52.467504+00:00
+2.562,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Abilene Christian""}",/lineups/team,200,2026-02-22T02:50:55.181962+00:00
+0.275,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Air Force""}",/games,200,2026-02-22T02:50:55.649216+00:00
+2.091,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Air Force""}",/lineups/team,200,2026-02-22T02:50:57.892545+00:00
+0.277,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Akron""}",/games,200,2026-02-22T02:50:58.351735+00:00
+3.246,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Akron""}",/lineups/team,200,2026-02-22T02:51:01.750271+00:00
+0.331,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Alabama""}",/games,200,2026-02-22T02:51:02.264188+00:00
+3.736,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Alabama""}",/lineups/team,200,2026-02-22T02:51:06.152228+00:00
+0.334,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Alabama A&M""}",/games,200,2026-02-22T02:51:06.686625+00:00
+2.147,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Alabama A&M""}",/lineups/team,200,2026-02-22T02:51:08.986135+00:00
+0.293,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Alabama State""}",/games,200,2026-02-22T02:51:09.470105+00:00
+2.33,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-08"", ""team"": ""Alabama State""}",/lineups/team,200,2026-02-22T02:51:11.952223+00:00
+0.328,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UAlbany""}",/games,200,2026-02-22T02:51:12.459650+00:00
+3.576,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UAlbany""}",/lineups/team,200,2026-02-22T02:51:16.187644+00:00
+0.337,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Alcorn State""}",/games,200,2026-02-22T02:51:16.701915+00:00
+1.778,,False,"{""endDateRange"": ""2026-03-05"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Alcorn State""}",/lineups/team,200,2026-02-22T02:51:18.632035+00:00
+0.291,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""American University""}",/games,200,2026-02-22T02:51:19.095385+00:00
+3.234,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""American University""}",/lineups/team,200,2026-02-22T02:51:22.481643+00:00
+0.287,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""App State""}",/games,200,2026-02-22T02:51:22.942244+00:00
+1.89,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""App State""}",/lineups/team,200,2026-02-22T02:51:24.984448+00:00
+0.303,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Arizona""}",/games,200,2026-02-22T02:51:25.455571+00:00
+2.116,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Arizona""}",/lineups/team,200,2026-02-22T02:51:27.723515+00:00
+0.319,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Arizona State""}",/games,200,2026-02-22T02:51:28.203901+00:00
+2.436,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Arizona State""}",/lineups/team,200,2026-02-22T02:51:30.791673+00:00
+0.298,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Arkansas""}",/games,200,2026-02-22T02:51:31.260843+00:00
+1.943,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Arkansas""}",/lineups/team,200,2026-02-22T02:51:33.355989+00:00
+0.303,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Arkansas-Pine Bluff""}",/games,200,2026-02-22T02:51:33.820739+00:00
+1.902,,False,"{""endDateRange"": ""2026-03-05"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Arkansas-Pine Bluff""}",/lineups/team,200,2026-02-22T02:51:35.875186+00:00
+0.314,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Arkansas State""}",/games,200,2026-02-22T02:51:36.363155+00:00
+2.061,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Arkansas State""}",/lineups/team,200,2026-02-22T02:51:38.576668+00:00
+0.274,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Army""}",/games,200,2026-02-22T02:51:39.030074+00:00
+2.614,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Army""}",/lineups/team,200,2026-02-22T02:51:41.796405+00:00
+0.532,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Auburn""}",/games,200,2026-02-22T02:51:42.520190+00:00
+1.87,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Auburn""}",/lineups/team,200,2026-02-22T02:51:44.541804+00:00
+0.256,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Austin Peay""}",/games,200,2026-02-22T02:51:44.966815+00:00
+2.303,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Austin Peay""}",/lineups/team,200,2026-02-22T02:51:47.422131+00:00
+0.405,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""BYU""}",/games,200,2026-02-22T02:51:48.009416+00:00
+1.894,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""BYU""}",/lineups/team,200,2026-02-22T02:51:50.055799+00:00
+0.281,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Ball State""}",/games,200,2026-02-22T02:51:50.517667+00:00
+2.135,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Ball State""}",/lineups/team,200,2026-02-22T02:51:52.805177+00:00
+0.304,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Baylor""}",/games,200,2026-02-22T02:51:53.287895+00:00
+1.859,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Baylor""}",/lineups/team,200,2026-02-22T02:51:55.298571+00:00
+0.316,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Bellarmine""}",/games,200,2026-02-22T02:51:55.774284+00:00
+3.33,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Bellarmine""}",/lineups/team,200,2026-02-22T02:51:59.256388+00:00
+0.271,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Belmont""}",/games,200,2026-02-22T02:51:59.734765+00:00
+4.149,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Belmont""}",/lineups/team,200,2026-02-22T02:52:04.035721+00:00
+0.335,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Bethune-Cookman""}",/games,200,2026-02-22T02:52:04.561325+00:00
+1.763,,False,"{""endDateRange"": ""2026-03-05"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Bethune-Cookman""}",/lineups/team,200,2026-02-22T02:52:06.476292+00:00
+0.292,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Binghamton""}",/games,200,2026-02-22T02:52:06.940029+00:00
+1.749,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Binghamton""}",/lineups/team,200,2026-02-22T02:52:08.841580+00:00
+0.28,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Boise State""}",/games,200,2026-02-22T02:52:09.287427+00:00
+2.278,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Boise State""}",/lineups/team,200,2026-02-22T02:52:11.717933+00:00
+0.296,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Boston College""}",/games,200,2026-02-22T02:52:12.184355+00:00
+1.963,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Boston College""}",/lineups/team,200,2026-02-22T02:52:14.299848+00:00
+0.273,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Boston University""}",/games,200,2026-02-22T02:52:14.739298+00:00
+2.015,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Boston University""}",/lineups/team,200,2026-02-22T02:52:16.905977+00:00
+0.332,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Bowling Green""}",/games,200,2026-02-22T02:52:17.405924+00:00
+2.42,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Bowling Green""}",/lineups/team,200,2026-02-22T02:52:19.977929+00:00
+0.296,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Bradley""}",/games,200,2026-02-22T02:52:20.445237+00:00
+3.144,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Bradley""}",/lineups/team,200,2026-02-22T02:52:23.740820+00:00
+0.256,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Brown""}",/games,200,2026-02-22T02:52:24.173332+00:00
+2.604,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-08"", ""team"": ""Brown""}",/lineups/team,200,2026-02-22T02:52:26.929618+00:00
+0.404,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Bryant""}",/games,200,2026-02-22T02:52:27.514080+00:00
+2.145,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Bryant""}",/lineups/team,200,2026-02-22T02:52:29.810897+00:00
+0.291,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Bucknell""}",/games,200,2026-02-22T02:52:30.286939+00:00
+2.193,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Bucknell""}",/lineups/team,200,2026-02-22T02:52:32.631638+00:00
+0.279,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Buffalo""}",/games,200,2026-02-22T02:52:33.092301+00:00
+2.358,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Buffalo""}",/lineups/team,200,2026-02-22T02:52:35.602323+00:00
+0.292,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Butler""}",/games,200,2026-02-22T02:52:36.060365+00:00
+2.723,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""Butler""}",/lineups/team,200,2026-02-22T02:52:38.935558+00:00
+0.276,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""California Baptist""}",/games,200,2026-02-22T02:52:39.394633+00:00
+1.868,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""California Baptist""}",/lineups/team,200,2026-02-22T02:52:41.414727+00:00
+0.327,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Cal Poly""}",/games,200,2026-02-22T02:52:41.921499+00:00
+3.179,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Cal Poly""}",/lineups/team,200,2026-02-22T02:52:45.253117+00:00
+0.269,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Cal State Bakersfield""}",/games,200,2026-02-22T02:52:45.721315+00:00
+3.037,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Cal State Bakersfield""}",/lineups/team,200,2026-02-22T02:52:48.910479+00:00
+0.293,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Cal State Fullerton""}",/games,200,2026-02-22T02:52:49.401263+00:00
+2.174,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Cal State Fullerton""}",/lineups/team,200,2026-02-22T02:52:51.727513+00:00
+0.294,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Cal State Northridge""}",/games,200,2026-02-22T02:52:52.194747+00:00
+2.72,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Cal State Northridge""}",/lineups/team,200,2026-02-22T02:52:55.067360+00:00
+0.298,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""California""}",/games,200,2026-02-22T02:52:55.539217+00:00
+2.429,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""California""}",/lineups/team,200,2026-02-22T02:52:58.120395+00:00
+0.254,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Campbell""}",/games,200,2026-02-22T02:52:58.551695+00:00
+2.745,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Campbell""}",/lineups/team,200,2026-02-22T02:53:01.448785+00:00
+0.339,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Canisius""}",/games,200,2026-02-22T02:53:01.956988+00:00
+2.576,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Canisius""}",/lineups/team,200,2026-02-22T02:53:04.685471+00:00
+0.305,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Central Arkansas""}",/games,200,2026-02-22T02:53:05.168269+00:00
+2.924,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Central Arkansas""}",/lineups/team,200,2026-02-22T02:53:08.243946+00:00
+0.302,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Central Connecticut""}",/games,200,2026-02-22T02:53:08.718404+00:00
+2.133,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Central Connecticut""}",/lineups/team,200,2026-02-22T02:53:11.003392+00:00
+0.283,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Central Michigan""}",/games,200,2026-02-22T02:53:11.473901+00:00
+3.035,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Central Michigan""}",/lineups/team,200,2026-02-22T02:53:14.661096+00:00
+0.339,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Charleston""}",/games,200,2026-02-22T02:53:15.180025+00:00
+2.941,,False,"{""endDateRange"": ""2026-03-02"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Charleston""}",/lineups/team,200,2026-02-22T02:53:18.272728+00:00
+0.278,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Charleston Southern""}",/games,200,2026-02-22T02:53:18.733255+00:00
+4.367,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Charleston Southern""}",/lineups/team,200,2026-02-22T02:53:23.252579+00:00
+0.307,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Charlotte""}",/games,200,2026-02-22T02:53:23.753522+00:00
+2.915,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Charlotte""}",/lineups/team,200,2026-02-22T02:53:26.821053+00:00
+0.658,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Chattanooga""}",/games,200,2026-02-22T02:53:27.672365+00:00
+3.941,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Chattanooga""}",/lineups/team,200,2026-02-22T02:53:31.765594+00:00
+2.09,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Chicago State""}",/games,200,2026-02-22T02:53:34.047697+00:00
+5.121,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Chicago State""}",/lineups/team,200,2026-02-22T02:53:39.320698+00:00
+0.392,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Cincinnati""}",/games,200,2026-02-22T02:53:39.958728+00:00
+2.627,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Cincinnati""}",/lineups/team,200,2026-02-22T02:53:42.738001+00:00
+0.355,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Clemson""}",/games,200,2026-02-22T02:53:43.277132+00:00
+2.993,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Clemson""}",/lineups/team,200,2026-02-22T02:53:46.421961+00:00
+0.358,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Cleveland State""}",/games,200,2026-02-22T02:53:46.961983+00:00
+3.314,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Cleveland State""}",/lineups/team,200,2026-02-22T02:53:50.428395+00:00
+0.325,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Coastal Carolina""}",/games,200,2026-02-22T02:53:50.944327+00:00
+2.785,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Coastal Carolina""}",/lineups/team,200,2026-02-22T02:53:53.881836+00:00
+0.398,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Colgate""}",/games,200,2026-02-22T02:53:54.449207+00:00
+2.658,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Colgate""}",/lineups/team,200,2026-02-22T02:53:57.259457+00:00
+0.298,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Colorado""}",/games,200,2026-02-22T02:53:57.728975+00:00
+3.512,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Colorado""}",/lineups/team,200,2026-02-22T02:54:01.393202+00:00
+0.387,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Colorado State""}",/games,200,2026-02-22T02:54:01.957450+00:00
+3.068,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Colorado State""}",/lineups/team,200,2026-02-22T02:54:05.177572+00:00
+0.333,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Columbia""}",/games,200,2026-02-22T02:54:05.683405+00:00
+2.932,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-07"", ""team"": ""Columbia""}",/lineups/team,200,2026-02-22T02:54:08.767417+00:00
+0.518,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UConn""}",/games,200,2026-02-22T02:54:09.459724+00:00
+2.608,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UConn""}",/lineups/team,200,2026-02-22T02:54:12.219797+00:00
+0.382,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Coppin State""}",/games,200,2026-02-22T02:54:12.769737+00:00
+2.503,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Coppin State""}",/lineups/team,200,2026-02-22T02:54:15.424772+00:00
+0.308,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Cornell""}",/games,200,2026-02-22T02:54:15.943976+00:00
+3.501,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-08"", ""team"": ""Cornell""}",/lineups/team,200,2026-02-22T02:54:19.596415+00:00
+0.384,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Creighton""}",/games,200,2026-02-22T02:54:20.175836+00:00
+3.472,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""Creighton""}",/lineups/team,200,2026-02-22T02:54:23.800301+00:00
+1.7,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Dartmouth""}",/games,200,2026-02-22T02:54:25.685809+00:00
+2.79,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-09"", ""team"": ""Dartmouth""}",/lineups/team,200,2026-02-22T02:54:28.627128+00:00
+0.282,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Davidson""}",/games,200,2026-02-22T02:54:29.094631+00:00
+2.78,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Davidson""}",/lineups/team,200,2026-02-22T02:54:32.026330+00:00
+0.302,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Dayton""}",/games,200,2026-02-22T02:54:32.514675+00:00
+2.189,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Dayton""}",/lineups/team,200,2026-02-22T02:54:34.856378+00:00
+0.305,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""DePaul""}",/games,200,2026-02-22T02:54:35.331628+00:00
+2.54,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""DePaul""}",/lineups/team,200,2026-02-22T02:54:38.023927+00:00
+0.338,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Delaware""}",/games,200,2026-02-22T02:54:38.536120+00:00
+2.869,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Delaware""}",/lineups/team,200,2026-02-22T02:54:41.556726+00:00
+0.329,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Delaware State""}",/games,200,2026-02-22T02:54:42.049620+00:00
+2.039,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""Delaware State""}",/lineups/team,200,2026-02-22T02:54:44.240245+00:00
+0.345,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Denver""}",/games,200,2026-02-22T02:54:44.786284+00:00
+2.687,,False,"{""endDateRange"": ""2026-02-27"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Denver""}",/lineups/team,200,2026-02-22T02:54:47.624959+00:00
+0.445,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Detroit Mercy""}",/games,200,2026-02-22T02:54:48.236382+00:00
+2.952,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Detroit Mercy""}",/lineups/team,200,2026-02-22T02:54:51.340113+00:00
+0.456,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Drake""}",/games,200,2026-02-22T02:54:51.993652+00:00
+3.305,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Drake""}",/lineups/team,200,2026-02-22T02:54:55.451109+00:00
+0.355,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Drexel""}",/games,200,2026-02-22T02:54:55.977976+00:00
+2.551,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Drexel""}",/lineups/team,200,2026-02-22T02:54:58.680884+00:00
+0.29,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Duke""}",/games,200,2026-02-22T02:54:59.143201+00:00
+2.585,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Duke""}",/lineups/team,200,2026-02-22T02:55:01.880127+00:00
+0.432,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Duquesne""}",/games,200,2026-02-22T02:55:02.476530+00:00
+3.777,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Duquesne""}",/lineups/team,200,2026-02-22T02:55:06.405558+00:00
+0.49,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""East Carolina""}",/games,200,2026-02-22T02:55:07.075957+00:00
+4.079,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""East Carolina""}",/lineups/team,200,2026-02-22T02:55:11.307210+00:00
+0.355,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""East Tennessee State""}",/games,200,2026-02-22T02:55:11.837947+00:00
+2.796,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""East Tennessee State""}",/lineups/team,200,2026-02-22T02:55:14.785582+00:00
+0.329,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""East Texas A&M""}",/games,200,2026-02-22T02:55:15.288298+00:00
+3.173,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""East Texas A&M""}",/lineups/team,200,2026-02-22T02:55:18.613889+00:00
+0.374,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Eastern Illinois""}",/games,200,2026-02-22T02:55:19.177304+00:00
+2.955,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Eastern Illinois""}",/lineups/team,200,2026-02-22T02:55:22.283811+00:00
+0.318,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Eastern Kentucky""}",/games,200,2026-02-22T02:55:22.780088+00:00
+2.547,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-07"", ""team"": ""Eastern Kentucky""}",/lineups/team,200,2026-02-22T02:55:25.479485+00:00
+0.273,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Eastern Michigan""}",/games,200,2026-02-22T02:55:25.929803+00:00
+3.144,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Eastern Michigan""}",/lineups/team,200,2026-02-22T02:55:29.225996+00:00
+0.467,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Eastern Washington""}",/games,200,2026-02-22T02:55:29.892067+00:00
+3.189,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Eastern Washington""}",/lineups/team,200,2026-02-22T02:55:33.233407+00:00
+0.409,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Elon""}",/games,200,2026-02-22T02:55:33.827203+00:00
+2.92,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""Elon""}",/lineups/team,200,2026-02-22T02:55:36.899736+00:00
+0.387,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Evansville""}",/games,200,2026-02-22T02:55:37.462731+00:00
+1.7,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Evansville""}",/lineups/team,200,2026-02-22T02:55:39.314633+00:00
+0.387,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Florida International""}",/games,200,2026-02-22T02:55:39.872401+00:00
+4.467,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Florida International""}",/lineups/team,200,2026-02-22T02:55:44.491172+00:00
+0.261,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Fairfield""}",/games,200,2026-02-22T02:55:44.925845+00:00
+1.827,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Fairfield""}",/lineups/team,200,2026-02-22T02:55:46.905442+00:00
+0.307,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Fairleigh Dickinson""}",/games,200,2026-02-22T02:55:47.385104+00:00
+18.492,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Fairleigh Dickinson""}",/lineups/team,200,2026-02-22T02:56:06.029743+00:00
+0.34,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Florida""}",/games,200,2026-02-22T02:56:07.091027+00:00
+2.479,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Florida""}",/lineups/team,200,2026-02-22T02:56:09.722200+00:00
+0.271,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Florida A&M""}",/games,200,2026-02-22T02:56:10.160277+00:00
+2.031,,False,"{""endDateRange"": ""2026-03-05"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Florida A&M""}",/lineups/team,200,2026-02-22T02:56:12.343682+00:00
+0.271,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Florida Atlantic""}",/games,200,2026-02-22T02:56:12.791647+00:00
+2.083,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Florida Atlantic""}",/lineups/team,200,2026-02-22T02:56:15.026696+00:00
+0.38,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Florida Gulf Coast""}",/games,200,2026-02-22T02:56:15.585761+00:00
+4.597,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Florida Gulf Coast""}",/lineups/team,200,2026-02-22T02:56:20.334906+00:00
+0.318,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Florida State""}",/games,200,2026-02-22T02:56:20.831401+00:00
+3.177,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Florida State""}",/lineups/team,200,2026-02-22T02:56:24.161009+00:00
+0.312,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Fordham""}",/games,200,2026-02-22T02:56:24.658187+00:00
+2.426,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Fordham""}",/lineups/team,200,2026-02-22T02:56:27.236480+00:00
+0.322,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Fresno State""}",/games,200,2026-02-22T02:56:27.738291+00:00
+2.203,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Fresno State""}",/lineups/team,200,2026-02-22T02:56:30.093480+00:00
+0.33,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Furman""}",/games,200,2026-02-22T02:56:30.600711+00:00
+2.645,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Furman""}",/lineups/team,200,2026-02-22T02:56:33.397905+00:00
+0.303,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Gardner-Webb""}",/games,200,2026-02-22T02:56:33.887160+00:00
+3.029,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Gardner-Webb""}",/lineups/team,200,2026-02-22T02:56:37.068620+00:00
+0.255,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""George Mason""}",/games,200,2026-02-22T02:56:37.511622+00:00
+2.362,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""George Mason""}",/lineups/team,200,2026-02-22T02:56:40.025290+00:00
+0.289,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""George Washington""}",/games,200,2026-02-22T02:56:40.494919+00:00
+2.639,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""George Washington""}",/lineups/team,200,2026-02-22T02:56:43.285747+00:00
+0.292,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Georgetown""}",/games,200,2026-02-22T02:56:43.748470+00:00
+3.371,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Georgetown""}",/lineups/team,200,2026-02-22T02:56:47.271578+00:00
+0.324,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Georgia""}",/games,200,2026-02-22T02:56:47.772131+00:00
+3.125,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Georgia""}",/lineups/team,200,2026-02-22T02:56:51.048907+00:00
+0.279,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Georgia Southern""}",/games,200,2026-02-22T02:56:51.503048+00:00
+2.507,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Georgia Southern""}",/lineups/team,200,2026-02-22T02:56:54.162436+00:00
+0.303,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Georgia State""}",/games,200,2026-02-22T02:56:54.642728+00:00
+3.718,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Georgia State""}",/lineups/team,200,2026-02-22T02:56:58.512739+00:00
+0.31,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Georgia Tech""}",/games,200,2026-02-22T02:56:59.000427+00:00
+2.584,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Georgia Tech""}",/lineups/team,200,2026-02-22T02:57:01.736041+00:00
+0.297,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Gonzaga""}",/games,200,2026-02-22T02:57:02.216043+00:00
+2.488,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Gonzaga""}",/lineups/team,200,2026-02-22T02:57:04.855743+00:00
+0.315,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Grambling""}",/games,200,2026-02-22T02:57:05.348029+00:00
+2.48,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Grambling""}",/lineups/team,200,2026-02-22T02:57:07.979741+00:00
+1.069,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Grand Canyon""}",/games,200,2026-02-22T02:57:09.230420+00:00
+1.799,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Grand Canyon""}",/lineups/team,200,2026-02-22T02:57:11.181056+00:00
+0.623,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Green Bay""}",/games,200,2026-02-22T02:57:11.972554+00:00
+2.065,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Green Bay""}",/lineups/team,200,2026-02-22T02:57:14.189450+00:00
+0.293,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Hampton""}",/games,200,2026-02-22T02:57:14.666420+00:00
+2.662,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Hampton""}",/lineups/team,200,2026-02-22T02:57:17.480754+00:00
+0.266,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Harvard""}",/games,200,2026-02-22T02:57:17.950667+00:00
+1.446,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-07"", ""team"": ""Harvard""}",/lineups/team,200,2026-02-22T02:57:19.548248+00:00
+0.269,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Hawai'i""}",/games,200,2026-02-22T02:57:19.988747+00:00
+1.975,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Hawai'i""}",/lineups/team,200,2026-02-22T02:57:22.116153+00:00
+0.313,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""High Point""}",/games,200,2026-02-22T02:57:22.599915+00:00
+3.54,,False,"{""endDateRange"": ""2026-02-27"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""High Point""}",/lineups/team,200,2026-02-22T02:57:26.291694+00:00
+0.277,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Hofstra""}",/games,200,2026-02-22T02:57:26.755818+00:00
+1.74,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Hofstra""}",/lineups/team,200,2026-02-22T02:57:28.647804+00:00
+0.267,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Holy Cross""}",/games,200,2026-02-22T02:57:29.081523+00:00
+0.176,http_500,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Holy Cross""}",/lineups/team,500,2026-02-22T02:57:29.409522+00:00
+0.302,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Houston""}",/games,200,2026-02-22T02:57:29.862188+00:00
+1.937,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Houston""}",/lineups/team,200,2026-02-22T02:57:31.951112+00:00
+0.306,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Houston Christian""}",/games,200,2026-02-22T02:57:32.428667+00:00
+2.705,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Houston Christian""}",/lineups/team,200,2026-02-22T02:57:35.285383+00:00
+0.331,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Howard""}",/games,200,2026-02-22T02:57:35.792823+00:00
+2.612,,False,"{""endDateRange"": ""2026-03-05"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Howard""}",/lineups/team,200,2026-02-22T02:57:38.556460+00:00
+1.471,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""IU Indianapolis""}",/games,200,2026-02-22T02:57:40.215041+00:00
+3.024,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""IU Indianapolis""}",/lineups/team,200,2026-02-22T02:57:43.390928+00:00
+0.279,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Idaho""}",/games,200,2026-02-22T02:57:43.859100+00:00
+2.434,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Idaho""}",/lineups/team,200,2026-02-22T02:57:46.445277+00:00
+0.317,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Idaho State""}",/games,200,2026-02-22T02:57:46.934119+00:00
+3.052,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Idaho State""}",/lineups/team,200,2026-02-22T02:57:50.138006+00:00
+0.253,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Illinois""}",/games,200,2026-02-22T02:57:50.571135+00:00
+2.06,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Illinois""}",/lineups/team,200,2026-02-22T02:57:52.783722+00:00
+1.209,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UIC""}",/games,200,2026-02-22T02:57:54.165286+00:00
+2.281,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UIC""}",/lineups/team,200,2026-02-22T02:57:56.598410+00:00
+0.278,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Illinois State""}",/games,200,2026-02-22T02:57:57.055103+00:00
+2.374,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-07"", ""team"": ""Illinois State""}",/lineups/team,200,2026-02-22T02:57:59.581079+00:00
+0.236,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Incarnate Word""}",/games,200,2026-02-22T02:57:59.998974+00:00
+3.377,,False,"{""endDateRange"": ""2026-03-02"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Incarnate Word""}",/lineups/team,200,2026-02-22T02:58:03.528306+00:00
+0.282,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Indiana""}",/games,200,2026-02-22T02:58:03.992299+00:00
+1.961,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""Indiana""}",/lineups/team,200,2026-02-22T02:58:06.105011+00:00
+0.304,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Indiana State""}",/games,200,2026-02-22T02:58:06.573007+00:00
+2.379,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Indiana State""}",/lineups/team,200,2026-02-22T02:58:09.104226+00:00
+1.191,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Iona""}",/games,200,2026-02-22T02:58:10.471826+00:00
+2.269,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-08"", ""team"": ""Iona""}",/lineups/team,200,2026-02-22T02:58:12.892631+00:00
+0.275,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Iowa""}",/games,200,2026-02-22T02:58:13.347573+00:00
+1.944,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Iowa""}",/lineups/team,200,2026-02-22T02:58:15.443427+00:00
+0.308,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Iowa State""}",/games,200,2026-02-22T02:58:15.920285+00:00
+2.67,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Iowa State""}",/lineups/team,200,2026-02-22T02:58:18.742538+00:00
+0.954,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Jackson State""}",/games,200,2026-02-22T02:58:19.865458+00:00
+1.863,,False,"{""endDateRange"": ""2026-03-05"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Jackson State""}",/lineups/team,200,2026-02-22T02:58:21.880352+00:00
+0.285,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Jacksonville""}",/games,200,2026-02-22T02:58:22.350127+00:00
+12.114,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Jacksonville""}",/lineups/team,200,2026-02-22T02:58:34.616376+00:00
+1.476,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Jacksonville State""}",/games,200,2026-02-22T02:58:36.705918+00:00
+2.423,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Jacksonville State""}",/lineups/team,200,2026-02-22T02:58:39.281244+00:00
+0.351,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""James Madison""}",/games,200,2026-02-22T02:58:39.816342+00:00
+2.928,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""James Madison""}",/lineups/team,200,2026-02-22T02:58:42.896500+00:00
+0.315,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Kansas""}",/games,200,2026-02-22T02:58:43.394454+00:00
+1.959,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Kansas""}",/lineups/team,200,2026-02-22T02:58:45.505148+00:00
+0.303,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Kansas State""}",/games,200,2026-02-22T02:58:45.979207+00:00
+2.382,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Kansas State""}",/lineups/team,200,2026-02-22T02:58:48.513286+00:00
+0.334,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Kennesaw State""}",/games,200,2026-02-22T02:58:49.023271+00:00
+2.223,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Kennesaw State""}",/lineups/team,200,2026-02-22T02:58:51.398712+00:00
+0.276,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Kent State""}",/games,200,2026-02-22T02:58:51.855096+00:00
+2.328,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Kent State""}",/lineups/team,200,2026-02-22T02:58:54.334785+00:00
+0.306,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Kentucky""}",/games,200,2026-02-22T02:58:54.820129+00:00
+2.523,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Kentucky""}",/lineups/team,200,2026-02-22T02:58:57.495535+00:00
+0.315,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""LSU""}",/games,200,2026-02-22T02:58:57.989472+00:00
+1.747,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""LSU""}",/lineups/team,200,2026-02-22T02:58:59.889124+00:00
+0.498,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""La Salle""}",/games,200,2026-02-22T02:59:00.559491+00:00
+3.064,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""La Salle""}",/lineups/team,200,2026-02-22T02:59:03.775916+00:00
+1.782,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Lafayette""}",/games,200,2026-02-22T02:59:05.748276+00:00
+2.555,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Lafayette""}",/lineups/team,200,2026-02-22T02:59:08.455632+00:00
+0.294,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Lamar""}",/games,200,2026-02-22T02:59:08.924561+00:00
+2.675,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Lamar""}",/lineups/team,200,2026-02-22T02:59:11.751553+00:00
+0.272,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Le Moyne""}",/games,200,2026-02-22T02:59:12.200967+00:00
+1.922,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Le Moyne""}",/lineups/team,200,2026-02-22T02:59:14.274684+00:00
+0.337,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Lehigh""}",/games,200,2026-02-22T02:59:14.788892+00:00
+2.582,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Lehigh""}",/lineups/team,200,2026-02-22T02:59:17.523205+00:00
+0.383,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Liberty""}",/games,200,2026-02-22T02:59:18.082992+00:00
+2.315,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Liberty""}",/lineups/team,200,2026-02-22T02:59:20.550609+00:00
+0.316,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Lindenwood""}",/games,200,2026-02-22T02:59:21.050948+00:00
+2.916,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Lindenwood""}",/lineups/team,200,2026-02-22T02:59:24.119356+00:00
+0.234,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Lipscomb""}",/games,200,2026-02-22T02:59:24.521666+00:00
+3.181,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Lipscomb""}",/lineups/team,200,2026-02-22T02:59:27.854736+00:00
+0.3,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Little Rock""}",/games,200,2026-02-22T02:59:28.372345+00:00
+1.947,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Little Rock""}",/lineups/team,200,2026-02-22T02:59:30.471102+00:00
+0.282,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Long Beach State""}",/games,200,2026-02-22T02:59:30.920990+00:00
+22.256,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Long Beach State""}",/lineups/team,200,2026-02-22T02:59:53.329235+00:00
+0.261,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Longwood""}",/games,200,2026-02-22T02:59:54.444948+00:00
+3.15,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Longwood""}",/lineups/team,200,2026-02-22T02:59:57.747023+00:00
+0.309,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Louisiana""}",/games,200,2026-02-22T02:59:58.248463+00:00
+9.162,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Louisiana""}",/lineups/team,200,2026-02-22T03:00:07.562173+00:00
+1.445,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UL Monroe""}",/games,200,2026-02-22T03:00:09.192510+00:00
+2.632,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UL Monroe""}",/lineups/team,200,2026-02-22T03:00:11.976518+00:00
+0.428,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Louisiana Tech""}",/games,200,2026-02-22T03:00:12.574544+00:00
+2.746,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Louisiana Tech""}",/lineups/team,200,2026-02-22T03:00:15.472878+00:00
+0.431,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Louisville""}",/games,200,2026-02-22T03:00:16.085543+00:00
+3.152,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Louisville""}",/lineups/team,200,2026-02-22T03:00:19.390065+00:00
+0.294,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Loyola Chicago""}",/games,200,2026-02-22T03:00:19.861614+00:00
+2.929,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Loyola Chicago""}",/lineups/team,200,2026-02-22T03:00:22.942361+00:00
+0.39,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Loyola Maryland""}",/games,200,2026-02-22T03:00:23.521587+00:00
+4.661,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Loyola Maryland""}",/lineups/team,200,2026-02-22T03:00:28.334604+00:00
+0.381,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Loyola Marymount""}",/games,200,2026-02-22T03:00:28.907886+00:00
+14.289,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Loyola Marymount""}",/lineups/team,200,2026-02-22T03:00:43.349043+00:00
+0.364,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Maine""}",/games,200,2026-02-22T03:00:44.306036+00:00
+1.737,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Maine""}",/lineups/team,200,2026-02-22T03:00:46.195318+00:00
+0.301,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Manhattan""}",/games,200,2026-02-22T03:00:46.669145+00:00
+2.148,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Manhattan""}",/lineups/team,200,2026-02-22T03:00:48.969061+00:00
+0.399,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Marist""}",/games,200,2026-02-22T03:00:49.533612+00:00
+16.817,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Marist""}",/lineups/team,200,2026-02-22T03:01:06.502149+00:00
+0.33,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Marquette""}",/games,200,2026-02-22T03:01:07.612253+00:00
+2.447,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Marquette""}",/lineups/team,200,2026-02-22T03:01:10.211293+00:00
+0.322,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Marshall""}",/games,200,2026-02-22T03:01:10.720793+00:00
+2.531,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Marshall""}",/lineups/team,200,2026-02-22T03:01:13.403402+00:00
+0.277,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Maryland""}",/games,200,2026-02-22T03:01:13.859705+00:00
+2.437,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Maryland""}",/lineups/team,200,2026-02-22T03:01:16.448713+00:00
+0.33,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Maryland Eastern Shore""}",/games,200,2026-02-22T03:01:16.966408+00:00
+2.237,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Maryland Eastern Shore""}",/lineups/team,200,2026-02-22T03:01:19.355427+00:00
+0.884,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Massachusetts""}",/games,200,2026-02-22T03:01:20.443249+00:00
+2.211,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Massachusetts""}",/lineups/team,200,2026-02-22T03:01:22.806454+00:00
+0.32,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""McNeese""}",/games,200,2026-02-22T03:01:23.300942+00:00
+2.914,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""McNeese""}",/lineups/team,200,2026-02-22T03:01:26.367200+00:00
+0.289,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Memphis""}",/games,200,2026-02-22T03:01:26.827443+00:00
+2.37,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-08"", ""team"": ""Memphis""}",/lineups/team,200,2026-02-22T03:01:29.349534+00:00
+0.904,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Mercer""}",/games,200,2026-02-22T03:01:30.454421+00:00
+2.2,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Mercer""}",/lineups/team,200,2026-02-22T03:01:32.806624+00:00
+0.261,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Mercyhurst""}",/games,200,2026-02-22T03:01:33.239072+00:00
+3.159,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Mercyhurst""}",/lineups/team,200,2026-02-22T03:01:36.550611+00:00
+0.306,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Merrimack""}",/games,200,2026-02-22T03:01:37.039508+00:00
+1.617,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Merrimack""}",/lineups/team,200,2026-02-22T03:01:38.808810+00:00
+0.256,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Miami""}",/games,200,2026-02-22T03:01:39.231065+00:00
+2.208,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Miami""}",/lineups/team,200,2026-02-22T03:01:41.591434+00:00
+0.497,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Miami (OH)""}",/games,200,2026-02-22T03:01:42.263555+00:00
+2.982,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Miami (OH)""}",/lineups/team,200,2026-02-22T03:01:45.397164+00:00
+1.344,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Michigan""}",/games,200,2026-02-22T03:01:46.915165+00:00
+3.544,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Michigan""}",/lineups/team,200,2026-02-22T03:01:50.611631+00:00
+0.505,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Michigan State""}",/games,200,2026-02-22T03:01:51.286892+00:00
+2.945,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Michigan State""}",/lineups/team,200,2026-02-22T03:01:54.384095+00:00
+0.314,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Middle Tennessee""}",/games,200,2026-02-22T03:01:54.876452+00:00
+2.397,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Middle Tennessee""}",/lineups/team,200,2026-02-22T03:01:57.425437+00:00
+0.307,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Milwaukee""}",/games,200,2026-02-22T03:01:57.902034+00:00
+2.383,,False,"{""endDateRange"": ""2026-02-26"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Milwaukee""}",/lineups/team,200,2026-02-22T03:02:00.436991+00:00
+0.614,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Minnesota""}",/games,200,2026-02-22T03:02:01.242221+00:00
+2.16,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Minnesota""}",/lineups/team,200,2026-02-22T03:02:03.553878+00:00
+0.327,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Ole Miss""}",/games,200,2026-02-22T03:02:04.046477+00:00
+2.429,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Ole Miss""}",/lineups/team,200,2026-02-22T03:02:06.627248+00:00
+0.294,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Mississippi State""}",/games,200,2026-02-22T03:02:07.114472+00:00
+2.401,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""Mississippi State""}",/lineups/team,200,2026-02-22T03:02:09.668021+00:00
+0.269,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Mississippi Valley State""}",/games,200,2026-02-22T03:02:10.113151+00:00
+1.676,,False,"{""endDateRange"": ""2026-03-05"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Mississippi Valley State""}",/lineups/team,200,2026-02-22T03:02:11.941046+00:00
+0.346,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Missouri""}",/games,200,2026-02-22T03:02:12.463837+00:00
+3.343,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Missouri""}",/lineups/team,200,2026-02-22T03:02:15.959401+00:00
+0.271,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Missouri State""}",/games,200,2026-02-22T03:02:16.415171+00:00
+2.469,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Missouri State""}",/lineups/team,200,2026-02-22T03:02:19.035843+00:00
+0.293,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Monmouth""}",/games,200,2026-02-22T03:02:19.513905+00:00
+1.582,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Monmouth""}",/lineups/team,200,2026-02-22T03:02:21.248327+00:00
+0.736,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Montana""}",/games,200,2026-02-22T03:02:22.154173+00:00
+2.452,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Montana""}",/lineups/team,200,2026-02-22T03:02:24.758654+00:00
+0.349,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Montana State""}",/games,200,2026-02-22T03:02:25.293576+00:00
+2.643,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Montana State""}",/lineups/team,200,2026-02-22T03:02:28.088447+00:00
+0.377,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Morehead State""}",/games,200,2026-02-22T03:02:28.663313+00:00
+2.822,,False,"{""endDateRange"": ""2026-02-27"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Morehead State""}",/lineups/team,200,2026-02-22T03:02:31.637151+00:00
+0.4,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Morgan State""}",/games,200,2026-02-22T03:02:32.209382+00:00
+2.555,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Morgan State""}",/lineups/team,200,2026-02-22T03:02:34.916140+00:00
+0.322,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Mount St. Mary's""}",/games,200,2026-02-22T03:02:35.420958+00:00
+2.948,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Mount St. Mary's""}",/lineups/team,200,2026-02-22T03:02:38.521567+00:00
+0.352,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Murray State""}",/games,200,2026-02-22T03:02:39.053269+00:00
+2.209,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Murray State""}",/lineups/team,200,2026-02-22T03:02:41.414687+00:00
+0.265,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""NC State""}",/games,200,2026-02-22T03:02:41.849486+00:00
+2.744,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""NC State""}",/lineups/team,200,2026-02-22T03:02:44.745239+00:00
+0.253,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""NJIT""}",/games,200,2026-02-22T03:02:45.168454+00:00
+2.115,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""NJIT""}",/lineups/team,200,2026-02-22T03:02:47.435291+00:00
+0.317,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Navy""}",/games,200,2026-02-22T03:02:47.929622+00:00
+2.158,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Navy""}",/lineups/team,200,2026-02-22T03:02:50.240037+00:00
+0.328,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Nebraska""}",/games,200,2026-02-22T03:02:50.741513+00:00
+2.07,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Nebraska""}",/lineups/team,200,2026-02-22T03:02:52.963106+00:00
+0.271,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Omaha""}",/games,200,2026-02-22T03:02:53.401111+00:00
+2.17,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Omaha""}",/lineups/team,200,2026-02-22T03:02:55.723615+00:00
+0.3,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Nevada""}",/games,200,2026-02-22T03:02:56.205590+00:00
+12.574,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Nevada""}",/lineups/team,200,2026-02-22T03:03:08.931245+00:00
+0.445,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""New Hampshire""}",/games,200,2026-02-22T03:03:10.061741+00:00
+3.352,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""New Hampshire""}",/lineups/team,200,2026-02-22T03:03:13.567120+00:00
+0.268,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""New Mexico""}",/games,200,2026-02-22T03:03:14.007868+00:00
+2.101,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""New Mexico""}",/lineups/team,200,2026-02-22T03:03:16.261184+00:00
+0.314,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""New Mexico State""}",/games,200,2026-02-22T03:03:16.746563+00:00
+2.296,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""New Mexico State""}",/lineups/team,200,2026-02-22T03:03:19.194457+00:00
+0.315,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""New Orleans""}",/games,200,2026-02-22T03:03:19.688509+00:00
+2.265,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""New Orleans""}",/lineups/team,200,2026-02-22T03:03:22.105588+00:00
+0.311,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Niagara""}",/games,200,2026-02-22T03:03:22.597733+00:00
+2.291,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Niagara""}",/lineups/team,200,2026-02-22T03:03:25.040570+00:00
+0.275,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Nicholls""}",/games,200,2026-02-22T03:03:25.500003+00:00
+2.787,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Nicholls""}",/lineups/team,200,2026-02-22T03:03:28.439280+00:00
+0.282,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Norfolk State""}",/games,200,2026-02-22T03:03:28.916468+00:00
+2.287,,False,"{""endDateRange"": ""2026-03-05"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Norfolk State""}",/lineups/team,200,2026-02-22T03:03:31.355821+00:00
+0.298,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""North Alabama""}",/games,200,2026-02-22T03:03:31.828572+00:00
+1.967,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""North Alabama""}",/lineups/team,200,2026-02-22T03:03:33.947443+00:00
+0.249,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""North Carolina""}",/games,200,2026-02-22T03:03:34.378249+00:00
+2.165,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""North Carolina""}",/lineups/team,200,2026-02-22T03:03:36.694890+00:00
+0.32,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""North Carolina A&T""}",/games,200,2026-02-22T03:03:37.186552+00:00
+1.698,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""North Carolina A&T""}",/lineups/team,200,2026-02-22T03:03:39.036331+00:00
+0.434,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""North Carolina Central""}",/games,200,2026-02-22T03:03:39.644027+00:00
+1.665,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""North Carolina Central""}",/lineups/team,200,2026-02-22T03:03:41.461129+00:00
+1.011,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""North Dakota""}",/games,200,2026-02-22T03:03:42.642837+00:00
+25.446,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""North Dakota""}",/lineups/team,200,2026-02-22T03:04:08.240806+00:00
+0.375,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""North Dakota State""}",/games,200,2026-02-22T03:04:09.400421+00:00
+4.327,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""North Dakota State""}",/lineups/team,200,2026-02-22T03:04:13.880000+00:00
+0.301,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""North Florida""}",/games,200,2026-02-22T03:04:14.354481+00:00
+2.574,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-07"", ""team"": ""North Florida""}",/lineups/team,200,2026-02-22T03:04:17.080924+00:00
+0.296,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""North Texas""}",/games,200,2026-02-22T03:04:17.552090+00:00
+2.543,,False,"{""endDateRange"": ""2026-03-05"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""North Texas""}",/lineups/team,200,2026-02-22T03:04:20.247314+00:00
+0.468,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Northeastern""}",/games,200,2026-02-22T03:04:20.896016+00:00
+2.071,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Northeastern""}",/lineups/team,200,2026-02-22T03:04:23.118663+00:00
+0.368,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Northern Arizona""}",/games,200,2026-02-22T03:04:23.672451+00:00
+3.443,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Northern Arizona""}",/lineups/team,200,2026-02-22T03:04:27.267250+00:00
+1.059,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Northern Colorado""}",/games,200,2026-02-22T03:04:28.517134+00:00
+2.219,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Northern Colorado""}",/lineups/team,200,2026-02-22T03:04:30.888360+00:00
+0.348,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Northern Illinois""}",/games,200,2026-02-22T03:04:31.405571+00:00
+2.271,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Northern Illinois""}",/lineups/team,200,2026-02-22T03:04:33.828978+00:00
+0.343,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Northern Iowa""}",/games,200,2026-02-22T03:04:34.355141+00:00
+2.219,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-07"", ""team"": ""Northern Iowa""}",/lineups/team,200,2026-02-22T03:04:36.726390+00:00
+0.363,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Northern Kentucky""}",/games,200,2026-02-22T03:04:37.266213+00:00
+3.064,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Northern Kentucky""}",/lineups/team,200,2026-02-22T03:04:40.482064+00:00
+0.315,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Northwestern""}",/games,200,2026-02-22T03:04:40.968589+00:00
+2.477,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Northwestern""}",/lineups/team,200,2026-02-22T03:04:43.597959+00:00
+0.282,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Northwestern State""}",/games,200,2026-02-22T03:04:44.059084+00:00
+2.66,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Northwestern State""}",/lineups/team,200,2026-02-22T03:04:46.871389+00:00
+0.346,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Notre Dame""}",/games,200,2026-02-22T03:04:47.422158+00:00
+2.763,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Notre Dame""}",/lineups/team,200,2026-02-22T03:04:50.337582+00:00
+1.152,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Oakland""}",/games,200,2026-02-22T03:04:51.672592+00:00
+1.895,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Oakland""}",/lineups/team,200,2026-02-22T03:04:53.720330+00:00
+0.345,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Ohio""}",/games,200,2026-02-22T03:04:54.233422+00:00
+1.795,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Ohio""}",/lineups/team,200,2026-02-22T03:04:56.180772+00:00
+0.272,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Ohio State""}",/games,200,2026-02-22T03:04:56.621849+00:00
+2.385,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Ohio State""}",/lineups/team,200,2026-02-22T03:04:59.159075+00:00
+1.738,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Oklahoma""}",/games,200,2026-02-22T03:05:01.070493+00:00
+4.459,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Oklahoma""}",/lineups/team,200,2026-02-22T03:05:05.681382+00:00
+0.536,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Oklahoma State""}",/games,200,2026-02-22T03:05:06.397443+00:00
+3.106,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Oklahoma State""}",/lineups/team,200,2026-02-22T03:05:09.655890+00:00
+0.333,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Old Dominion""}",/games,200,2026-02-22T03:05:10.176487+00:00
+2.746,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Old Dominion""}",/lineups/team,200,2026-02-22T03:05:13.074511+00:00
+0.267,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Oral Roberts""}",/games,200,2026-02-22T03:05:13.526759+00:00
+2.594,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Oral Roberts""}",/lineups/team,200,2026-02-22T03:05:16.272947+00:00
+0.337,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Oregon""}",/games,200,2026-02-22T03:05:16.790965+00:00
+2.018,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Oregon""}",/lineups/team,200,2026-02-22T03:05:18.960658+00:00
+0.345,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Oregon State""}",/games,200,2026-02-22T03:05:19.489768+00:00
+1.99,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Oregon State""}",/lineups/team,200,2026-02-22T03:05:21.631787+00:00
+0.306,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Pacific""}",/games,200,2026-02-22T03:05:22.119272+00:00
+1.715,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""Pacific""}",/lineups/team,200,2026-02-22T03:05:23.986802+00:00
+0.32,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Pennsylvania""}",/games,200,2026-02-22T03:05:24.471386+00:00
+2.22,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-08"", ""team"": ""Pennsylvania""}",/lineups/team,200,2026-02-22T03:05:26.843872+00:00
+0.293,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Penn State""}",/games,200,2026-02-22T03:05:27.310070+00:00
+2.121,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Penn State""}",/lineups/team,200,2026-02-22T03:05:29.582684+00:00
+0.628,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Pepperdine""}",/games,200,2026-02-22T03:05:30.382524+00:00
+2.385,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Pepperdine""}",/lineups/team,200,2026-02-22T03:05:32.919824+00:00
+0.261,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Pittsburgh""}",/games,200,2026-02-22T03:05:33.356697+00:00
+1.986,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Pittsburgh""}",/lineups/team,200,2026-02-22T03:05:35.494544+00:00
+0.425,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Portland""}",/games,200,2026-02-22T03:05:36.084615+00:00
+2.566,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Portland""}",/lineups/team,200,2026-02-22T03:05:38.802588+00:00
+0.372,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Portland State""}",/games,200,2026-02-22T03:05:39.351674+00:00
+2.455,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Portland State""}",/lineups/team,200,2026-02-22T03:05:41.958773+00:00
+0.28,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Prairie View A&M""}",/games,200,2026-02-22T03:05:42.423676+00:00
+2.397,,False,"{""endDateRange"": ""2026-03-05"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Prairie View A&M""}",/lineups/team,200,2026-02-22T03:05:44.973078+00:00
+0.263,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Presbyterian""}",/games,200,2026-02-22T03:05:45.418906+00:00
+3.439,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Presbyterian""}",/lineups/team,200,2026-02-22T03:05:49.009843+00:00
+0.353,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Princeton""}",/games,200,2026-02-22T03:05:49.535590+00:00
+2.189,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-08"", ""team"": ""Princeton""}",/lineups/team,200,2026-02-22T03:05:51.876501+00:00
+0.354,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Providence""}",/games,200,2026-02-22T03:05:52.407699+00:00
+3.404,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Providence""}",/lineups/team,200,2026-02-22T03:05:55.964102+00:00
+0.295,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Purdue""}",/games,200,2026-02-22T03:05:56.440037+00:00
+2.102,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Purdue""}",/lineups/team,200,2026-02-22T03:05:58.694550+00:00
+0.295,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Purdue Fort Wayne""}",/games,200,2026-02-22T03:05:59.153027+00:00
+3.495,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Purdue Fort Wayne""}",/lineups/team,200,2026-02-22T03:06:02.800231+00:00
+0.4,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Queens University""}",/games,200,2026-02-22T03:06:03.375303+00:00
+3.576,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Queens University""}",/lineups/team,200,2026-02-22T03:06:07.103480+00:00
+1.901,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Quinnipiac""}",/games,200,2026-02-22T03:06:09.182577+00:00
+1.783,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Quinnipiac""}",/lineups/team,200,2026-02-22T03:06:11.118035+00:00
+0.336,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Radford""}",/games,200,2026-02-22T03:06:11.633714+00:00
+2.34,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Radford""}",/lineups/team,200,2026-02-22T03:06:14.126238+00:00
+0.323,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Rhode Island""}",/games,200,2026-02-22T03:06:14.624819+00:00
+1.782,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Rhode Island""}",/lineups/team,200,2026-02-22T03:06:16.559097+00:00
+0.322,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Rice""}",/games,200,2026-02-22T03:06:17.051200+00:00
+2.139,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Rice""}",/lineups/team,200,2026-02-22T03:06:19.341686+00:00
+0.275,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Richmond""}",/games,200,2026-02-22T03:06:19.804791+00:00
+3.704,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""Richmond""}",/lineups/team,200,2026-02-22T03:06:23.661287+00:00
+0.365,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Rider""}",/games,200,2026-02-22T03:06:24.219438+00:00
+2.61,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Rider""}",/lineups/team,200,2026-02-22T03:06:26.981163+00:00
+0.339,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Robert Morris""}",/games,200,2026-02-22T03:06:27.505828+00:00
+2.24,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Robert Morris""}",/lineups/team,200,2026-02-22T03:06:29.897829+00:00
+0.34,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Rutgers""}",/games,200,2026-02-22T03:06:30.419651+00:00
+2.265,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Rutgers""}",/lineups/team,200,2026-02-22T03:06:32.836311+00:00
+0.654,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""SIU Edwardsville""}",/games,200,2026-02-22T03:06:33.677346+00:00
+2.349,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""SIU Edwardsville""}",/lineups/team,200,2026-02-22T03:06:36.178337+00:00
+0.302,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""SMU""}",/games,200,2026-02-22T03:06:36.671580+00:00
+2.595,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""SMU""}",/lineups/team,200,2026-02-22T03:06:39.419069+00:00
+0.292,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Sacramento State""}",/games,200,2026-02-22T03:06:39.885380+00:00
+1.623,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Sacramento State""}",/lineups/team,200,2026-02-22T03:06:41.660701+00:00
+0.309,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Sacred Heart""}",/games,200,2026-02-22T03:06:42.145186+00:00
+1.727,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Sacred Heart""}",/lineups/team,200,2026-02-22T03:06:44.023947+00:00
+0.411,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""St. Francis (PA)""}",/games,200,2026-02-22T03:06:44.605026+00:00
+2.359,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""St. Francis (PA)""}",/lineups/team,200,2026-02-22T03:06:47.115840+00:00
+0.284,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Saint Joseph's""}",/games,200,2026-02-22T03:06:47.580389+00:00
+1.86,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Saint Joseph's""}",/lineups/team,200,2026-02-22T03:06:49.592378+00:00
+0.269,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Saint Louis""}",/games,200,2026-02-22T03:06:50.034829+00:00
+1.932,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Saint Louis""}",/lineups/team,200,2026-02-22T03:06:52.118731+00:00
+0.309,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Saint Mary's""}",/games,200,2026-02-22T03:06:52.599623+00:00
+5.181,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Saint Mary's""}",/lineups/team,200,2026-02-22T03:06:57.932286+00:00
+0.722,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Saint Peter's""}",/games,200,2026-02-22T03:06:59.000506+00:00
+2.584,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Saint Peter's""}",/lineups/team,200,2026-02-22T03:07:01.736211+00:00
+0.437,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Sam Houston""}",/games,200,2026-02-22T03:07:02.357867+00:00
+2.677,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Sam Houston""}",/lineups/team,200,2026-02-22T03:07:05.186750+00:00
+0.316,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Samford""}",/games,200,2026-02-22T03:07:05.688997+00:00
+3.818,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Samford""}",/lineups/team,200,2026-02-22T03:07:09.658765+00:00
+0.288,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""San Diego""}",/games,200,2026-02-22T03:07:10.124208+00:00
+1.72,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""San Diego""}",/lineups/team,200,2026-02-22T03:07:11.996074+00:00
+0.263,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""San Diego State""}",/games,200,2026-02-22T03:07:12.462531+00:00
+1.98,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""San Diego State""}",/lineups/team,200,2026-02-22T03:07:14.594887+00:00
+0.332,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""San Francisco""}",/games,200,2026-02-22T03:07:15.109219+00:00
+2.102,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""San Francisco""}",/lineups/team,200,2026-02-22T03:07:17.363339+00:00
+0.274,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""San Jos\u00e9 State""}",/games,200,2026-02-22T03:07:17.821211+00:00
+1.303,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""San Jos\u00e9 State""}",/lineups/team,200,2026-02-22T03:07:19.276332+00:00
+0.275,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Santa Clara""}",/games,200,2026-02-22T03:07:19.724299+00:00
+2.265,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Santa Clara""}",/lineups/team,200,2026-02-22T03:07:22.141956+00:00
+0.297,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Seattle U""}",/games,200,2026-02-22T03:07:22.610101+00:00
+2.209,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Seattle U""}",/lineups/team,200,2026-02-22T03:07:24.970663+00:00
+0.279,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Seton Hall""}",/games,200,2026-02-22T03:07:25.420660+00:00
+1.815,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Seton Hall""}",/lineups/team,200,2026-02-22T03:07:27.387728+00:00
+0.356,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Siena""}",/games,200,2026-02-22T03:07:27.911400+00:00
+1.299,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Siena""}",/lineups/team,200,2026-02-22T03:07:29.362046+00:00
+0.289,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""South Alabama""}",/games,200,2026-02-22T03:07:29.816512+00:00
+16.668,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""South Alabama""}",/lineups/team,200,2026-02-22T03:07:46.636516+00:00
+0.283,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""South Carolina""}",/games,200,2026-02-22T03:07:47.719433+00:00
+1.758,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""South Carolina""}",/lineups/team,200,2026-02-22T03:07:49.629574+00:00
+0.272,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""South Carolina State""}",/games,200,2026-02-22T03:07:50.083396+00:00
+2.76,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""South Carolina State""}",/lineups/team,200,2026-02-22T03:07:52.995029+00:00
+0.253,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""South Dakota""}",/games,200,2026-02-22T03:07:53.460340+00:00
+2.217,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""South Dakota""}",/lineups/team,200,2026-02-22T03:07:55.829414+00:00
+0.261,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""South Dakota State""}",/games,200,2026-02-22T03:07:56.283886+00:00
+1.933,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""South Dakota State""}",/lineups/team,200,2026-02-22T03:07:58.369454+00:00
+0.241,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""South Florida""}",/games,200,2026-02-22T03:07:58.780973+00:00
+5.625,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""South Florida""}",/lineups/team,200,2026-02-22T03:08:04.558637+00:00
+1.723,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Southeast Missouri State""}",/games,200,2026-02-22T03:08:06.567144+00:00
+2.069,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Southeast Missouri State""}",/lineups/team,200,2026-02-22T03:08:08.788556+00:00
+0.25,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""SE Louisiana""}",/games,200,2026-02-22T03:08:09.220736+00:00
+2.019,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""SE Louisiana""}",/lineups/team,200,2026-02-22T03:08:11.391964+00:00
+0.284,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Southern""}",/games,200,2026-02-22T03:08:11.873528+00:00
+1.721,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Southern""}",/lineups/team,200,2026-02-22T03:08:13.746695+00:00
+0.235,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Southern Illinois""}",/games,200,2026-02-22T03:08:14.171939+00:00
+1.966,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Southern Illinois""}",/lineups/team,200,2026-02-22T03:08:16.289665+00:00
+0.357,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Southern Indiana""}",/games,200,2026-02-22T03:08:16.826700+00:00
+1.363,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""Southern Indiana""}",/lineups/team,200,2026-02-22T03:08:18.342039+00:00
+0.266,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Southern Miss""}",/games,200,2026-02-22T03:08:18.785006+00:00
+1.455,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Southern Miss""}",/lineups/team,200,2026-02-22T03:08:20.391966+00:00
+0.257,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Southern Utah""}",/games,200,2026-02-22T03:08:20.830390+00:00
+1.726,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Southern Utah""}",/lineups/team,200,2026-02-22T03:08:22.708078+00:00
+0.319,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""St. Bonaventure""}",/games,200,2026-02-22T03:08:23.209165+00:00
+29.909,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""St. Bonaventure""}",/lineups/team,200,2026-02-22T03:08:53.270332+00:00
+0.255,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""St. John's""}",/games,200,2026-02-22T03:08:54.368408+00:00
+1.838,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""St. John's""}",/lineups/team,200,2026-02-22T03:08:56.358335+00:00
+0.293,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Stanford""}",/games,200,2026-02-22T03:08:56.828386+00:00
+1.903,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Stanford""}",/lineups/team,200,2026-02-22T03:08:58.883177+00:00
+0.298,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Stephen F. Austin""}",/games,200,2026-02-22T03:08:59.359892+00:00
+4.502,,False,"{""endDateRange"": ""2026-03-02"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Stephen F. Austin""}",/lineups/team,200,2026-02-22T03:09:04.014091+00:00
+0.312,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Stetson""}",/games,200,2026-02-22T03:09:04.495403+00:00
+2.02,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Stetson""}",/lineups/team,200,2026-02-22T03:09:06.667248+00:00
+0.329,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Stonehill""}",/games,200,2026-02-22T03:09:07.182698+00:00
+2.09,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Stonehill""}",/lineups/team,200,2026-02-22T03:09:09.425177+00:00
+0.318,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Stony Brook""}",/games,200,2026-02-22T03:09:09.918914+00:00
+1.653,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Stony Brook""}",/lineups/team,200,2026-02-22T03:09:11.723667+00:00
+0.273,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Syracuse""}",/games,200,2026-02-22T03:09:12.169638+00:00
+1.81,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Syracuse""}",/lineups/team,200,2026-02-22T03:09:14.132048+00:00
+0.285,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""TCU""}",/games,200,2026-02-22T03:09:14.588946+00:00
+2.436,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""TCU""}",/lineups/team,200,2026-02-22T03:09:17.176685+00:00
+0.317,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Tarleton State""}",/games,200,2026-02-22T03:09:17.663552+00:00
+2.063,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Tarleton State""}",/lineups/team,200,2026-02-22T03:09:19.878681+00:00
+0.274,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Temple""}",/games,200,2026-02-22T03:09:20.354533+00:00
+2.009,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""Temple""}",/lineups/team,200,2026-02-22T03:09:22.516259+00:00
+0.271,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Tennessee""}",/games,200,2026-02-22T03:09:22.957436+00:00
+2.246,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Tennessee""}",/lineups/team,200,2026-02-22T03:09:25.356051+00:00
+0.429,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UT Martin""}",/games,200,2026-02-22T03:09:25.968575+00:00
+2.388,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""UT Martin""}",/lineups/team,200,2026-02-22T03:09:28.508356+00:00
+0.279,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Tennessee State""}",/games,200,2026-02-22T03:09:28.984396+00:00
+1.772,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Tennessee State""}",/lineups/team,200,2026-02-22T03:09:30.907843+00:00
+0.293,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Tennessee Tech""}",/games,200,2026-02-22T03:09:31.372766+00:00
+2.406,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Tennessee Tech""}",/lineups/team,200,2026-02-22T03:09:33.930477+00:00
+0.278,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Texas""}",/games,200,2026-02-22T03:09:34.399964+00:00
+2.02,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Texas""}",/lineups/team,200,2026-02-22T03:09:36.572377+00:00
+0.289,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Texas A&M""}",/games,200,2026-02-22T03:09:37.032652+00:00
+2.504,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Texas A&M""}",/lineups/team,200,2026-02-22T03:09:39.689001+00:00
+0.274,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Texas A&M-Corpus Christi""}",/games,200,2026-02-22T03:09:40.159040+00:00
+3.088,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Texas A&M-Corpus Christi""}",/lineups/team,200,2026-02-22T03:09:43.398911+00:00
+0.308,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Texas Southern""}",/games,200,2026-02-22T03:09:43.921484+00:00
+1.424,,False,"{""endDateRange"": ""2026-03-05"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Texas Southern""}",/lineups/team,200,2026-02-22T03:09:45.497444+00:00
+0.26,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Texas State""}",/games,200,2026-02-22T03:09:45.946380+00:00
+1.8,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Texas State""}",/lineups/team,200,2026-02-22T03:09:47.898529+00:00
+0.296,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Texas Tech""}",/games,200,2026-02-22T03:09:48.375834+00:00
+1.243,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Texas Tech""}",/lineups/team,200,2026-02-22T03:09:49.770642+00:00
+0.288,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""The Citadel""}",/games,200,2026-02-22T03:09:50.222878+00:00
+2.41,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""The Citadel""}",/lineups/team,200,2026-02-22T03:09:52.784852+00:00
+0.272,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Toledo""}",/games,200,2026-02-22T03:09:53.251774+00:00
+1.737,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Toledo""}",/lineups/team,200,2026-02-22T03:09:55.140938+00:00
+0.316,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Towson""}",/games,200,2026-02-22T03:09:55.622882+00:00
+2.409,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Towson""}",/lineups/team,200,2026-02-22T03:09:58.183767+00:00
+0.264,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Troy""}",/games,200,2026-02-22T03:09:58.625332+00:00
+1.987,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Troy""}",/lineups/team,200,2026-02-22T03:10:00.764419+00:00
+0.337,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Tulane""}",/games,200,2026-02-22T03:10:01.270833+00:00
+3.059,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Tulane""}",/lineups/team,200,2026-02-22T03:10:04.481598+00:00
+0.363,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Tulsa""}",/games,200,2026-02-22T03:10:05.011161+00:00
+2.272,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Tulsa""}",/lineups/team,200,2026-02-22T03:10:07.434945+00:00
+0.315,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UAB""}",/games,200,2026-02-22T03:10:07.918616+00:00
+21.773,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UAB""}",/lineups/team,200,2026-02-22T03:10:29.843474+00:00
+0.255,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UC Davis""}",/games,200,2026-02-22T03:10:31.059379+00:00
+1.974,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UC Davis""}",/lineups/team,200,2026-02-22T03:10:33.185678+00:00
+0.285,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UC Irvine""}",/games,200,2026-02-22T03:10:33.652220+00:00
+2.117,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UC Irvine""}",/lineups/team,200,2026-02-22T03:10:35.921624+00:00
+0.294,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UC Riverside""}",/games,200,2026-02-22T03:10:36.390486+00:00
+1.807,,False,"{""endDateRange"": ""2026-03-06"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UC Riverside""}",/lineups/team,200,2026-02-22T03:10:38.349351+00:00
+0.252,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UC San Diego""}",/games,200,2026-02-22T03:10:38.773369+00:00
+1.709,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UC San Diego""}",/lineups/team,200,2026-02-22T03:10:40.634969+00:00
+0.268,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UC Santa Barbara""}",/games,200,2026-02-22T03:10:41.077623+00:00
+2.677,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""UC Santa Barbara""}",/lineups/team,200,2026-02-22T03:10:43.906481+00:00
+0.245,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UCF""}",/games,200,2026-02-22T03:10:44.336530+00:00
+1.536,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UCF""}",/lineups/team,200,2026-02-22T03:10:46.024103+00:00
+0.297,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UCLA""}",/games,200,2026-02-22T03:10:46.501349+00:00
+1.85,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UCLA""}",/lineups/team,200,2026-02-22T03:10:48.503589+00:00
+0.325,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UMBC""}",/games,200,2026-02-22T03:10:49.000248+00:00
+1.695,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UMBC""}",/lineups/team,200,2026-02-22T03:10:50.847487+00:00
+0.291,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Kansas City""}",/games,200,2026-02-22T03:10:51.314934+00:00
+2.325,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Kansas City""}",/lineups/team,200,2026-02-22T03:10:53.792418+00:00
+0.272,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UMass Lowell""}",/games,200,2026-02-22T03:10:54.242993+00:00
+1.347,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UMass Lowell""}",/lineups/team,200,2026-02-22T03:10:55.741849+00:00
+0.313,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UNC Asheville""}",/games,200,2026-02-22T03:10:56.227426+00:00
+1.86,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""UNC Asheville""}",/lineups/team,200,2026-02-22T03:10:58.239791+00:00
+0.261,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UNC Greensboro""}",/games,200,2026-02-22T03:10:58.670875+00:00
+2.01,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""UNC Greensboro""}",/lineups/team,200,2026-02-22T03:11:00.833061+00:00
+0.441,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UNC Wilmington""}",/games,200,2026-02-22T03:11:01.454384+00:00
+2.436,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UNC Wilmington""}",/lineups/team,200,2026-02-22T03:11:04.042734+00:00
+0.304,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UNLV""}",/games,200,2026-02-22T03:11:04.508842+00:00
+1.492,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""UNLV""}",/lineups/team,200,2026-02-22T03:11:06.152832+00:00
+0.313,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""USC""}",/games,200,2026-02-22T03:11:06.643020+00:00
+1.64,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""USC""}",/lineups/team,200,2026-02-22T03:11:08.435326+00:00
+0.262,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""South Carolina Upstate""}",/games,200,2026-02-22T03:11:08.893237+00:00
+1.875,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""South Carolina Upstate""}",/lineups/team,200,2026-02-22T03:11:10.919999+00:00
+0.335,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UT Arlington""}",/games,200,2026-02-22T03:11:11.434964+00:00
+1.794,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UT Arlington""}",/lineups/team,200,2026-02-22T03:11:13.381444+00:00
+0.303,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UT Rio Grande Valley""}",/games,200,2026-02-22T03:11:13.862799+00:00
+2.115,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UT Rio Grande Valley""}",/lineups/team,200,2026-02-22T03:11:16.130096+00:00
+0.33,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UTEP""}",/games,200,2026-02-22T03:11:16.650898+00:00
+1.803,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""UTEP""}",/lineups/team,200,2026-02-22T03:11:18.606299+00:00
+0.29,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""UTSA""}",/games,200,2026-02-22T03:11:19.084480+00:00
+1.922,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-06"", ""team"": ""UTSA""}",/lineups/team,200,2026-02-22T03:11:21.158490+00:00
+0.3,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Utah""}",/games,200,2026-02-22T03:11:21.638030+00:00
+1.888,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Utah""}",/lineups/team,200,2026-02-22T03:11:23.678563+00:00
+0.309,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Utah State""}",/games,200,2026-02-22T03:11:24.154467+00:00
+1.581,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Utah State""}",/lineups/team,200,2026-02-22T03:11:25.887428+00:00
+0.336,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Utah Tech""}",/games,200,2026-02-22T03:11:26.394198+00:00
+1.71,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Utah Tech""}",/lineups/team,200,2026-02-22T03:11:28.256515+00:00
+0.269,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Utah Valley""}",/games,200,2026-02-22T03:11:28.699625+00:00
+1.53,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Utah Valley""}",/lineups/team,200,2026-02-22T03:11:30.381476+00:00
+0.298,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""VCU""}",/games,200,2026-02-22T03:11:30.851021+00:00
+8.421,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""VCU""}",/lineups/team,200,2026-02-22T03:11:39.424139+00:00
+0.276,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""VMI""}",/games,200,2026-02-22T03:11:40.263987+00:00
+1.711,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""VMI""}",/lineups/team,200,2026-02-22T03:11:42.127041+00:00
+0.297,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Valparaiso""}",/games,200,2026-02-22T03:11:42.594286+00:00
+2.228,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Valparaiso""}",/lineups/team,200,2026-02-22T03:11:44.974736+00:00
+0.292,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Vanderbilt""}",/games,200,2026-02-22T03:11:45.451610+00:00
+3.245,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Vanderbilt""}",/lineups/team,200,2026-02-22T03:11:48.848597+00:00
+0.266,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Vermont""}",/games,200,2026-02-22T03:11:49.369696+00:00
+2.35,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Vermont""}",/lineups/team,200,2026-02-22T03:11:51.872179+00:00
+0.304,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Villanova""}",/games,200,2026-02-22T03:11:52.363528+00:00
+1.912,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Villanova""}",/lineups/team,200,2026-02-22T03:11:54.427088+00:00
+0.276,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Virginia""}",/games,200,2026-02-22T03:11:54.872623+00:00
+2.856,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Virginia""}",/lineups/team,200,2026-02-22T03:11:57.881021+00:00
+0.41,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Virginia Tech""}",/games,200,2026-02-22T03:11:58.465257+00:00
+3.567,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Virginia Tech""}",/lineups/team,200,2026-02-22T03:12:02.184462+00:00
+0.385,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Wagner""}",/games,200,2026-02-22T03:12:02.809268+00:00
+2.336,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Wagner""}",/lineups/team,200,2026-02-22T03:12:05.297120+00:00
+0.345,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Wake Forest""}",/games,200,2026-02-22T03:12:05.822394+00:00
+2.268,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Wake Forest""}",/lineups/team,200,2026-02-22T03:12:08.242480+00:00
+0.356,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Washington""}",/games,200,2026-02-22T03:12:08.765481+00:00
+2.603,,False,"{""endDateRange"": ""2026-03-08"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Washington""}",/lineups/team,200,2026-02-22T03:12:11.520613+00:00
+0.342,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Washington State""}",/games,200,2026-02-22T03:12:12.083945+00:00
+2.54,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Washington State""}",/lineups/team,200,2026-02-22T03:12:14.775965+00:00
+0.369,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Weber State""}",/games,200,2026-02-22T03:12:15.323927+00:00
+3.124,,False,"{""endDateRange"": ""2026-03-03"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Weber State""}",/lineups/team,200,2026-02-22T03:12:18.599717+00:00
+0.311,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""West Georgia""}",/games,200,2026-02-22T03:12:19.089354+00:00
+2.349,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""West Georgia""}",/lineups/team,200,2026-02-22T03:12:21.590095+00:00
+0.487,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""West Virginia""}",/games,200,2026-02-22T03:12:22.244576+00:00
+2.525,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""West Virginia""}",/lineups/team,200,2026-02-22T03:12:24.921482+00:00
+0.303,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Western Carolina""}",/games,200,2026-02-22T03:12:25.397182+00:00
+2.678,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Western Carolina""}",/lineups/team,200,2026-02-22T03:12:28.227668+00:00
+0.284,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Western Illinois""}",/games,200,2026-02-22T03:12:28.691613+00:00
+1.985,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Western Illinois""}",/lineups/team,200,2026-02-22T03:12:30.829169+00:00
+0.273,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Western Kentucky""}",/games,200,2026-02-22T03:12:31.282006+00:00
+3.386,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Western Kentucky""}",/lineups/team,200,2026-02-22T03:12:34.819764+00:00
+0.292,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Western Michigan""}",/games,200,2026-02-22T03:12:35.321021+00:00
+3.206,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Western Michigan""}",/lineups/team,200,2026-02-22T03:12:38.678941+00:00
+0.325,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Wichita State""}",/games,200,2026-02-22T03:12:39.197395+00:00
+2.844,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-05"", ""team"": ""Wichita State""}",/lineups/team,200,2026-02-22T03:12:42.193217+00:00
+0.274,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""William & Mary""}",/games,200,2026-02-22T03:12:42.634821+00:00
+3.43,,False,"{""endDateRange"": ""2026-03-04"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""William & Mary""}",/lineups/team,200,2026-02-22T03:12:46.216942+00:00
+0.342,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Winthrop""}",/games,200,2026-02-22T03:12:46.741427+00:00
+3.837,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-03"", ""team"": ""Winthrop""}",/lineups/team,200,2026-02-22T03:12:50.730594+00:00
+0.259,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Wisconsin""}",/games,200,2026-02-22T03:12:51.174726+00:00
+2.183,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Wisconsin""}",/lineups/team,200,2026-02-22T03:12:53.509562+00:00
+0.277,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Wofford""}",/games,200,2026-02-22T03:12:53.962551+00:00
+2.387,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Wofford""}",/lineups/team,200,2026-02-22T03:12:56.501482+00:00
+0.333,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Wright State""}",/games,200,2026-02-22T03:12:57.011116+00:00
+2.764,,False,"{""endDateRange"": ""2026-03-01"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Wright State""}",/lineups/team,200,2026-02-22T03:12:59.927288+00:00
+0.475,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Wyoming""}",/games,200,2026-02-22T03:13:00.582320+00:00
+3.704,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Wyoming""}",/lineups/team,200,2026-02-22T03:13:04.438509+00:00
+0.378,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Xavier""}",/games,200,2026-02-22T03:13:04.998250+00:00
+2.833,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Xavier""}",/lineups/team,200,2026-02-22T03:13:07.983535+00:00
+0.382,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Yale""}",/games,200,2026-02-22T03:13:08.530342+00:00
+2.051,,False,"{""endDateRange"": ""2026-03-07"", ""season"": 2026, ""startDateRange"": ""2025-11-08"", ""team"": ""Yale""}",/lineups/team,200,2026-02-22T03:13:10.733305+00:00
+0.367,,False,"{""season"": 2026, ""seasonType"": ""regular"", ""team"": ""Youngstown State""}",/games,200,2026-02-22T03:13:11.270213+00:00
+2.964,,False,"{""endDateRange"": ""2026-02-28"", ""season"": 2026, ""startDateRange"": ""2025-11-04"", ""team"": ""Youngstown State""}",/lineups/team,200,2026-02-22T03:13:14.386395+00:00
