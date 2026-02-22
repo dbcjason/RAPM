@@ -35,6 +35,26 @@ on:
         description: "Safety cap for API requests"
         required: true
         default: "3000"
+      team_start:
+        description: "1-based matched team start index"
+        required: true
+        default: "1"
+      team_end:
+        description: "1-based matched team end index (0 = all)"
+        required: true
+        default: "0"
+      chunk_tag:
+        description: "Chunk suffix for output files (e.g. chunk001_120)"
+        required: false
+        default: ""
+      merge_chunks:
+        description: "Merge chunk CSVs into one file at end (true/false)"
+        required: true
+        default: "false"
+      merge_only:
+        description: "Skip pulling and only merge existing chunk CSVs (true/false)"
+        required: true
+        default: "false"
 
 permissions:
   contents: write
@@ -61,8 +81,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: /tmp/cbbd_http_cache
-          key: ${{ runner.os }}-cbbd-http-${{ inputs.year }}-${{ inputs.season_type }}-${{ inputs.datasets }}-v1
+          key: ${{ runner.os }}-cbbd-http-${{ inputs.year }}-${{ inputs.season_type }}-${{ inputs.datasets }}-${{ inputs.team_start }}-${{ inputs.team_end }}-v1
           restore-keys: |
+            ${{ runner.os }}-cbbd-http-${{ inputs.year }}-${{ inputs.season_type }}-${{ inputs.datasets }}-
             ${{ runner.os }}-cbbd-http-${{ inputs.year }}-${{ inputs.season_type }}-
             ${{ runner.os }}-cbbd-http-${{ inputs.year }}-
 
@@ -74,6 +95,17 @@ jobs:
           if [ "${{ inputs.include_player_shooting }}" = "true" ]; then
             SHOOTING_FLAG="--include-player-shooting"
           fi
+
+          MERGE_CHUNKS_FLAG=""
+          if [ "${{ inputs.merge_chunks }}" = "true" ]; then
+            MERGE_CHUNKS_FLAG="--merge-chunks"
+          fi
+
+          MERGE_ONLY_FLAG=""
+          if [ "${{ inputs.merge_only }}" = "true" ]; then
+            MERGE_ONLY_FLAG="--merge-only"
+          fi
+
           python pull_cbbd_lineups_plays_only.py \
             --year "${{ inputs.year }}" \
             --season-type "${{ inputs.season_type }}" \
@@ -83,7 +115,12 @@ jobs:
             --max-requests "${{ inputs.max_requests }}" \
             --cache-mode "${{ inputs.cache_mode }}" \
             --cache-dir "/tmp/cbbd_http_cache" \
-            $SHOOTING_FLAG
+            --team-start "${{ inputs.team_start }}" \
+            --team-end "${{ inputs.team_end }}" \
+            --chunk-tag "${{ inputs.chunk_tag }}" \
+            $SHOOTING_FLAG \
+            $MERGE_CHUNKS_FLAG \
+            $MERGE_ONLY_FLAG
 
       - name: Commit outputs
         run: |
@@ -93,6 +130,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No output changes to commit."
           else
-            git commit -m "Update CBBD outputs for ${{ inputs.year }} (${{ inputs.season_type }})"
+            git commit -m "Update CBBD outputs for ${{ inputs.year }} (${{ inputs.season_type }}) [${{ inputs.team_start }}-${{ inputs.team_end }}] ${{ inputs.chunk_tag }}"
             git push
           fi
