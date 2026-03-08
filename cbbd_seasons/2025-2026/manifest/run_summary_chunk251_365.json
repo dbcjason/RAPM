@@ -1,0 +1,30 @@
+{
+  "year": 2026,
+  "season_label": "2025-2026",
+  "requested_teams": 364,
+  "matched_teams": 112,
+  "unmatched_teams": 2,
+  "matched_teams_total": 362,
+  "team_start": 251,
+  "team_end": 362,
+  "chunk_tag": "chunk251_365",
+  "season_types": [
+    "regular"
+  ],
+  "datasets": "plays",
+  "include_player_shooting": false,
+  "cache_mode": "readwrite",
+  "cache_dir": "/tmp/cbbd_http_cache",
+  "started_utc": "2026-03-08T05:44:33.287050+00:00",
+  "dataset_rows": {
+    "plays_regular": {
+      "rows": 1618721
+    },
+    "plays_regular_unknown_game_map": {
+      "rows": 0
+    }
+  },
+  "request_count": 224,
+  "cache_hits": 1,
+  "finished_utc": "2026-03-08T06:01:34.368396+00:00"
+}
