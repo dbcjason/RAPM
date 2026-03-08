@@ -12,6 +12,7 @@ import argparse
 import csv
 import difflib
 import hashlib
+import io
 import json
 import os
 import re
@@ -134,20 +135,72 @@ def to_records(payload: Any) -> list[dict[str, Any]]:
     return []
 
 
-def write_csv(rows: list[dict[str, Any]], path: Path) -> None:
+def _csv_part_path(path: Path, part_idx: int) -> Path:
+    if part_idx <= 1:
+        return path
+    return path.with_name(f"{path.stem}_part{part_idx:03d}{path.suffix}")
+
+
+def _clear_existing_csv_parts(path: Path) -> None:
+    for p in [path, *sorted(path.parent.glob(f"{path.stem}_part*{path.suffix}"))]:
+        if p.exists():
+            p.unlink()
+
+
+def write_csv(rows: list[dict[str, Any]], path: Path, max_bytes: int = 0) -> None:
     ensure_dir(path.parent)
+    _clear_existing_csv_parts(path)
     if not rows:
         path.write_text("", encoding="utf-8")
         return
     keys = sorted({k for r in rows for k in r.keys()})
-    with path.open("w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=keys)
-        w.writeheader()
+    if max_bytes <= 0:
+        with path.open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=keys)
+            w.writeheader()
+            for row in rows:
+                w.writerow({k: row.get(k) for k in keys})
+        return
+
+    header_buf = io.StringIO()
+    header_writer = csv.DictWriter(header_buf, fieldnames=keys)
+    header_writer.writeheader()
+    header_text = header_buf.getvalue()
+    header_bytes = len(header_text.encode("utf-8"))
+
+    row_buf = io.StringIO()
+    row_writer = csv.DictWriter(row_buf, fieldnames=keys)
+
+    part_idx = 1
+    rows_in_part = 0
+    bytes_in_part = 0
+    part_path = _csv_part_path(path, part_idx)
+    f = part_path.open("w", newline="", encoding="utf-8")
+    f.write(header_text)
+    bytes_in_part = header_bytes
+    try:
         for row in rows:
-            w.writerow({k: row.get(k) for k in keys})
+            row_buf.seek(0)
+            row_buf.truncate(0)
+            row_writer.writerow({k: row.get(k) for k in keys})
+            row_text = row_buf.getvalue()
+            row_bytes = len(row_text.encode("utf-8"))
+            if rows_in_part > 0 and (bytes_in_part + row_bytes) > max_bytes:
+                f.close()
+                part_idx += 1
+                rows_in_part = 0
+                part_path = _csv_part_path(path, part_idx)
+                f = part_path.open("w", newline="", encoding="utf-8")
+                f.write(header_text)
+                bytes_in_part = header_bytes
+            f.write(row_text)
+            rows_in_part += 1
+            bytes_in_part += row_bytes
+    finally:
+        f.close()
 
 
-def merge_csv_files(inputs: list[Path], output: Path) -> int:
+def merge_csv_files(inputs: list[Path], output: Path, max_bytes: int = 0) -> int:
     frames = []
     for p in inputs:
         if not p.exists() or p.stat().st_size == 0:
@@ -160,7 +213,7 @@ def merge_csv_files(inputs: list[Path], output: Path) -> int:
         output.write_text("", encoding="utf-8")
         return 0
     merged = pd.concat(frames, ignore_index=True)
-    merged.to_csv(output, index=False)
+    write_csv(merged.to_dict(orient="records"), output, max_bytes=max_bytes)
     return int(len(merged))
 
 
@@ -598,6 +651,12 @@ def main() -> None:
     )
     parser.add_argument("--sleep-sec", type=float, default=0.15)
     parser.add_argument("--max-requests", type=int, default=3000)
+    parser.add_argument(
+        "--max-csv-mb",
+        type=float,
+        default=95.0,
+        help="Max size per CSV file part in MB (0 disables splitting).",
+    )
     parser.add_argument("--team-start", type=int, default=1, help="1-based start index within matched teams.")
     parser.add_argument("--team-end", type=int, default=0, help="1-based end index within matched teams. 0 means all.")
     parser.add_argument(
@@ -632,6 +691,7 @@ def main() -> None:
         help="Output root folder.",
     )
     args = parser.parse_args()
+    max_csv_bytes = int(max(args.max_csv_mb, 0) * 1024 * 1024)
 
     # Support GitHub Actions and local runs without editing code.
     api_key = os.environ.get("CBBD_API_KEY", API_KEY).strip()
@@ -675,8 +735,12 @@ def main() -> None:
     matched, unmatched = map_teams(requested, discovered)
     log(f"[teams] matched={len(matched)} unmatched={len(unmatched)}")
 
-    write_csv([flatten_obj(x) for x in matched], out / "tables" / "target_teams_matched.csv")
-    write_csv([{"team_name_unmatched": x} for x in unmatched], out / "tables" / "target_teams_unmatched.csv")
+    write_csv([flatten_obj(x) for x in matched], out / "tables" / "target_teams_matched.csv", max_bytes=max_csv_bytes)
+    write_csv(
+        [{"team_name_unmatched": x} for x in unmatched],
+        out / "tables" / "target_teams_unmatched.csv",
+        max_bytes=max_csv_bytes,
+    )
 
     if args.merge_only:
         args.merge_chunks = True
@@ -801,15 +865,23 @@ def main() -> None:
                     )
 
             if use_lineups:
-                write_csv([flatten_obj(r) for r in lineups], table_path(f"lineups_{st}"))
+                write_csv([flatten_obj(r) for r in lineups], table_path(f"lineups_{st}"), max_bytes=max_csv_bytes)
                 summary["dataset_rows"][f"lineups_{st}"] = {"rows": len(lineups)}
             if use_plays:
-                write_csv([flatten_obj(r) for r in plays], table_path(f"plays_{st}"))
-                write_csv([flatten_obj(r) for r in plays_unknown], table_path(f"plays_{st}_unknown_game_map"))
+                write_csv([flatten_obj(r) for r in plays], table_path(f"plays_{st}"), max_bytes=max_csv_bytes)
+                write_csv(
+                    [flatten_obj(r) for r in plays_unknown],
+                    table_path(f"plays_{st}_unknown_game_map"),
+                    max_bytes=max_csv_bytes,
+                )
                 summary["dataset_rows"][f"plays_{st}"] = {"rows": len(plays)}
                 summary["dataset_rows"][f"plays_{st}_unknown_game_map"] = {"rows": len(plays_unknown)}
             if args.include_player_shooting:
-                write_csv([flatten_obj(r) for r in player_shooting], table_path(f"player_shooting_{st}"))
+                write_csv(
+                    [flatten_obj(r) for r in player_shooting],
+                    table_path(f"player_shooting_{st}"),
+                    max_bytes=max_csv_bytes,
+                )
                 summary["dataset_rows"][f"player_shooting_{st}"] = {"rows": len(player_shooting)}
 
     # If both season types were requested, also write full-season combined tables.
@@ -831,15 +903,15 @@ def main() -> None:
                 if p_player_shooting.exists() and p_player_shooting.stat().st_size > 0:
                     full_player_shooting.extend(pd.read_csv(p_player_shooting, low_memory=False).to_dict(orient="records"))
         if use_lineups:
-            write_csv(full_lineups, table_path("lineups_fullseason"))
+            write_csv(full_lineups, table_path("lineups_fullseason"), max_bytes=max_csv_bytes)
             summary["dataset_rows"]["lineups_fullseason"] = {"rows": len(full_lineups)}
         if use_plays:
-            write_csv(full_plays, table_path("plays_fullseason"))
+            write_csv(full_plays, table_path("plays_fullseason"), max_bytes=max_csv_bytes)
             summary["dataset_rows"]["plays_fullseason"] = {"rows": len(full_plays)}
         if args.include_player_shooting:
-            write_csv(full_player_shooting, table_path("player_shooting_fullseason_raw"))
+            write_csv(full_player_shooting, table_path("player_shooting_fullseason_raw"), max_bytes=max_csv_bytes)
             player_shooting_agg = aggregate_player_shooting_fullseason(full_player_shooting)
-            write_csv(player_shooting_agg, table_path("player_shooting_fullseason"))
+            write_csv(player_shooting_agg, table_path("player_shooting_fullseason"), max_bytes=max_csv_bytes)
             summary["dataset_rows"]["player_shooting_fullseason_raw"] = {"rows": len(full_player_shooting)}
             summary["dataset_rows"]["player_shooting_fullseason"] = {"rows": len(player_shooting_agg)}
 
@@ -849,24 +921,32 @@ def main() -> None:
                 files = sorted((out / "tables").glob(f"lineups_{st}_*.csv"))
                 if not chunk_suffix:
                     files.append(out / "tables" / f"lineups_{st}.csv")
-                nrows = merge_csv_files(files, out / "tables" / f"lineups_{st}.csv")
+                nrows = merge_csv_files(files, out / "tables" / f"lineups_{st}.csv", max_bytes=max_csv_bytes)
                 summary["dataset_rows"][f"lineups_{st}_merged"] = {"rows": nrows, "chunks": len(files)}
             if use_plays:
                 files = sorted((out / "tables").glob(f"plays_{st}_*.csv"))
                 if not chunk_suffix:
                     files.append(out / "tables" / f"plays_{st}.csv")
-                nrows = merge_csv_files(files, out / "tables" / f"plays_{st}.csv")
+                nrows = merge_csv_files(files, out / "tables" / f"plays_{st}.csv", max_bytes=max_csv_bytes)
                 summary["dataset_rows"][f"plays_{st}_merged"] = {"rows": nrows, "chunks": len(files)}
                 files = sorted((out / "tables").glob(f"plays_{st}_unknown_game_map_*.csv"))
                 if not chunk_suffix:
                     files.append(out / "tables" / f"plays_{st}_unknown_game_map.csv")
-                nrows = merge_csv_files(files, out / "tables" / f"plays_{st}_unknown_game_map.csv")
+                nrows = merge_csv_files(
+                    files,
+                    out / "tables" / f"plays_{st}_unknown_game_map.csv",
+                    max_bytes=max_csv_bytes,
+                )
                 summary["dataset_rows"][f"plays_{st}_unknown_game_map_merged"] = {"rows": nrows, "chunks": len(files)}
             if args.include_player_shooting:
                 files = sorted((out / "tables").glob(f"player_shooting_{st}_*.csv"))
                 if not chunk_suffix:
                     files.append(out / "tables" / f"player_shooting_{st}.csv")
-                nrows = merge_csv_files(files, out / "tables" / f"player_shooting_{st}.csv")
+                nrows = merge_csv_files(
+                    files,
+                    out / "tables" / f"player_shooting_{st}.csv",
+                    max_bytes=max_csv_bytes,
+                )
                 summary["dataset_rows"][f"player_shooting_{st}_merged"] = {"rows": nrows, "chunks": len(files)}
 
         if args.season_type == "both":
@@ -874,26 +954,33 @@ def main() -> None:
                 nrows = merge_csv_files(
                     [out / "tables" / "lineups_regular.csv", out / "tables" / "lineups_postseason.csv"],
                     out / "tables" / "lineups_fullseason.csv",
+                    max_bytes=max_csv_bytes,
                 )
                 summary["dataset_rows"]["lineups_fullseason_merged"] = {"rows": nrows}
             if use_plays:
                 nrows = merge_csv_files(
                     [out / "tables" / "plays_regular.csv", out / "tables" / "plays_postseason.csv"],
                     out / "tables" / "plays_fullseason.csv",
+                    max_bytes=max_csv_bytes,
                 )
                 summary["dataset_rows"]["plays_fullseason_merged"] = {"rows": nrows}
             if args.include_player_shooting:
                 nrows = merge_csv_files(
                     [out / "tables" / "player_shooting_regular.csv", out / "tables" / "player_shooting_postseason.csv"],
                     out / "tables" / "player_shooting_fullseason_raw.csv",
+                    max_bytes=max_csv_bytes,
                 )
                 summary["dataset_rows"]["player_shooting_fullseason_raw_merged"] = {"rows": nrows}
                 full_raw_path = out / "tables" / "player_shooting_fullseason_raw.csv"
                 if full_raw_path.exists() and full_raw_path.stat().st_size > 0:
                     full_raw = pd.read_csv(full_raw_path, low_memory=False).to_dict(orient="records")
-                    write_csv(aggregate_player_shooting_fullseason(full_raw), out / "tables" / "player_shooting_fullseason.csv")
+                    write_csv(
+                        aggregate_player_shooting_fullseason(full_raw),
+                        out / "tables" / "player_shooting_fullseason.csv",
+                        max_bytes=max_csv_bytes,
+                    )
 
-    write_csv(client.request_log, manifest_path("requests_log"))
+    write_csv(client.request_log, manifest_path("requests_log"), max_bytes=max_csv_bytes)
     summary["request_count"] = client.request_count
     summary["cache_hits"] = client.cache_hits
     summary["finished_utc"] = utc_now()
